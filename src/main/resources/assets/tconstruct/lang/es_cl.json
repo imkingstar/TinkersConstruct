@@ -111,7 +111,6 @@
   "item.tconstruct.cobalt_nugget": "Pepita de Cobalto",
 
   "block.tconstruct.steel_block": "Bloque de Acero",
-  "block.tconstruct.steel_block.tooltip": "Puede usarse como base para el faro",
   "item.tconstruct.steel_ingot": "Lingote de Acero",
   "item.tconstruct.steel_nugget": "Pepita de Acero",
 
@@ -119,7 +118,6 @@
   "__comment": "Materiales de Tier 3",
 
   "block.tconstruct.slimesteel_block": "Bloque de Acero Slime",
-  "block.tconstruct.slimesteel_block.tooltip": "Puede usarse como base para el faro",
   "item.tconstruct.slimesteel_ingot": "Lingote de Acero Slime",
   "item.tconstruct.slimesteel_nugget": "Pepita de Acero Slime",
 
@@ -149,7 +147,6 @@
   "item.tconstruct.hepatizon_nugget": "Hepatizon Pepita",
 
   "block.tconstruct.cinderslime_block": "Bloque de Slime Ceniza",
-  "block.tconstruct.cinderslime_block.tooltip": "Puede usarse como base para el faro",
   "item.tconstruct.cinderslime_ingot": "Lingote de Slime Ceniza",
   "item.tconstruct.cinderslime_nugget": "Pepita de Slime Ceniza",
 
@@ -182,7 +179,7 @@
 
   "item.tconstruct.materials_and_you": "Materiales y tú",
   "item.tconstruct.materials_and_you.tooltip": "El libro de introducción hacia los materiales y herramientas\nPor Selena",
-  "item.tconstruct.encyclopedia": "Enciclopedia del Tinkereo",
+  "item.tconstruct.encyclopedia": "Enciclopedia del Tinker",
   "item.tconstruct.encyclopedia.tooltip": "El libro referencial para las necesidades de cualquier Tinker\nPor Selena",
 
   "item.tconstruct.tinkers_gadgetry": "Artilugios del Tinker",
@@ -395,7 +392,7 @@
   "item.tconstruct.tool_binding_cast": "Molde de oro de Unión",
   "item.tconstruct.tough_binding_cast": "Molde de oro de cuello bruto",
   "item.tconstruct.arrow_cast": "Molde de oro de flechas",
-  "item.tconstruct.arrow_cast.tooltip": "Patrón reusable para crear partes de flechas en el Creador de Partes",
+  "item.tconstruct.arrow_cast.tooltip": "Plantilla reusable para crear partes de flechas en el Creador de Partes",
 
   "_comment": "Moldes de oro de mangos",
 
@@ -1831,7 +1828,7 @@
   "material.tconstruct.necrotic_bone.skull_flavor": "¡Spooky Scary Skeleton!",
   "material.tconstruct.necrotic_bone.skull_encyclopedia": "Los ataques cuerpo a cuerpo contagian wither. Luego de beber leche, el efecto se vuelve más rápido",
 
-  "material.tconstruct.chorus": "Chrorus",
+  "material.tconstruct.chorus": "Chorus",
   "material.tconstruct.chorus.flavor": "No solo a los Enderman, ¡Pero también a las Enderwoman y los Enderchildren!",
   "material.tconstruct.chorus.encyclopedia": "Previene el teletransporte enemigo por 5 segundos cada nivel",
   "material.tconstruct.chorus.ranged": "Previene el teletransporte enemigo por 5 segundos por cada nivel de efecto, y permite tirar flechas a los enderman",
@@ -1856,7 +1853,7 @@
   "material.tconstruct.vine.encyclopedia": "La herramienta tiene un 75% de probabilidades de resistir daño en plena luz de sol",
 
 
-  "__comment": "Tier 2 Materials",
+  "__comment": "Materiales de Tier 2",
   "material.tconstruct.iron": "Hierro",
   "material.tconstruct.iron.wrought": "Hierro labrado",
   "material.tconstruct.iron.oxidized": "Hierro crudo",
@@ -2054,7 +2051,7 @@
   "material.tconstruct.cobalt": "Cobalto",
   "material.tconstruct.cobalt.flavor": "Coblato. El material del ejército rojo.",
   "material.tconstruct.cobalt.encyclopedia": "Aumenta la velocidad de minería y ataque en un 8% cada nivel",
-  "material.tconstruct.cobalt.ranged": "Aumenta la velocidad de carga y velocidad en +0.03 cada nivel",
+  "material.tconstruct.cobalt.ranged": "Aumenta la velocidad de carga y la velocidad en un 7% cada nivel",
   "material.tconstruct.cobalt.armor": "Reduce el daño de ataques cuerpo a cuerpo en un 8% cada nivel, y aumenta la velocidad al usar items en un 3% cada nivel",
 
   "material.tconstruct.quartz": "Cuarzo",
@@ -2183,7 +2180,7 @@
   "material.tconstruct.lead": "Plomo",
   "material.tconstruct.lead.flavor": "Podrías intentar y hacer un sandwitch con esto.",
   "material.tconstruct.lead.encyclopedia": "Otorga +15% de velocidad minera, +10% de resistencia al empuje, -10% de velocidad de movimiento, y +5% de gravedad cada nivel",
-  "material.tconstruct.lead.ranged": "Otorga +0.1 de precisión, +10% de resistencia al empuje, -10% de velocidad de movimiento, y +5% de gravedad cada nivel",
+  "material.tconstruct.lead.ranged": "Otorga +10% de precisión, +10% de resistencia al empuje, -10% de velocidad de movimiento, y +5% de gravedad cada nivel",
   "material.tconstruct.lead.armor": "Otorga +15% de resistencia al empuje, -10% de velocidad de movimiento, y +5% de gravedad cada nivel",
 
   "material.tconstruct.silver": "Plata",
@@ -2305,7 +2302,7 @@
   "modifier.tconstruct.offhanded.flavor": "No lo pienses mucho",
   "modifier.tconstruct.offhanded.description": "Desactiva las abilidades de interacción con la mano secundaria ocupada. El segundo nivel las desactiva completamente.",
   "modifier.tconstruct.blunted": "Para niños",
-  "modifier.tconstruct.blunted.flavor": "Safety when sparing",
+  "modifier.tconstruct.blunted.flavor": "Seguridad ante todo",
   "modifier.tconstruct.blunted.description": "Previene que la herramienta usa ataques cuerpo a cuerpo al atacar un mob, haciendo más fácil el usar habilidades de interacción.", 
 
   "modifier.tconstruct.barebow": "Arco desnudo",
@@ -2316,7 +2313,7 @@
   "_comment": "Durabilidad",
   "modifier.tconstruct.reinforced": "Reforzado",
   "modifier.tconstruct.reinforced.flavor": "¡De larga duración!",
-  "modifier.tconstruct.reinforced.description": "Tool is less likely to take damage",
+  "modifier.tconstruct.reinforced.description": "La herramienta es menos suceptible a tomar daño",
   "modifier.tconstruct.overforced": "Sobreforzado",
   "modifier.tconstruct.overforced.flavor": "¡Protegido por el slime!",
   "modifier.tconstruct.overforced.description": "La herramienta es reforzada usando slime, permitiendo más capacidad para el Sobreslime",
@@ -2505,12 +2502,12 @@
   "modifier.tconstruct.sinistral.flavor": "Suena malvado, pero te aseguro que es una condición completamente natural",
   "modifier.tconstruct.sinistral.description": "En la mano principal, la ballesta dispara al atacar en vez de al interactiar, y no va a poder cargarse al agacharse.",
   "modifier.tconstruct.scope": "Mira",
-  "modifier.tconstruct.scope.flavor": "Un 360 con mina no suena igual de piola",
+  "modifier.tconstruct.scope.flavor": "Un 360 con mira no suena igual de bien",
   "modifier.tconstruct.scope.description": "Acerca la vista en el objetivo mientras cargas la herramienta.",
   "modifier.tconstruct.war_charge": "Carga bélica",
   "modifier.tconstruct.war_charge.flavor": "Energía potencial",
   "modifier.tconstruct.war_charge.description": "Minar bloques mientras cargada aumenta gradualmente la velocidad del proyectil",
-  "modifier.tconstruct.war_charge.velocity": "Velocity",
+  "modifier.tconstruct.war_charge.velocity": "Velocidad",
   "modifier.tconstruct.ballista": "Balista",
   "modifier.tconstruct.ballista.flavor": "La munición para arco superior",
   "modifier.tconstruct.ballista.description": "Permite al arco disparar herramientas en tu mano secundaria.",
@@ -2540,7 +2537,7 @@
   "modifier.tconstruct.trim": "Ornamento de armadura",
   "modifier.tconstruct.trim.formatted": "%s (%s)",
   "modifier.tconstruct.trim.flavor": "¡Detallista!",
-  "modifier.tconstruct.trim.description": "Additional armor detailing using expensive patterns",
+  "modifier.tconstruct.trim.description": "Detalles adicionales de armadura usando caros patrones",
 
   "_comment": "Armadura - protección",
   "modifier.tconstruct.protection": "Protección",
@@ -2974,7 +2971,7 @@
   "modifier.tconstruct.cultivated": "Cultivado",
   "modifier.tconstruct.cultivated.flavor": "¡Económico!",
   "modifier.tconstruct.cultivated.description": "La herramienta prácticamente crea más material al repararle",
-  "modifier.tconstruct.economical": "Economical",
+  "modifier.tconstruct.economical": "Económico",
   "modifier.tconstruct.economical.flavor": "¡Ecológico!",
   "modifier.tconstruct.economical.description": "Duplica el número de flechas creadas",
   "modifier.tconstruct.cheap": "Barato",
@@ -3087,7 +3084,7 @@
   "modifier.tconstruct.skyfall.flavor": "¡Cayendo con estilo!",
   "modifier.tconstruct.skyfall.description": "Reduce el efecto de la gravedad",
   "modifier.tconstruct.flamestance": "Estadía ígnea",
-  "modifier.tconstruct.flamestance.flavor": "Power of Fire!",
+  "modifier.tconstruct.flamestance.flavor": "¡El poder del fuego!",
   "modifier.tconstruct.flamestance.description": "Aumenta el poder y la protección en biomas calientes, pero lo reduce en biomas fríos",
   "modifier.tconstruct.flamestance.attack_damage": "Daño de Estadía ígnea",
   "modifier.tconstruct.flamestance.projectile_damage": "Poder de Estadía ígnea",
@@ -3110,7 +3107,7 @@
   "modifier.tconstruct.crumbling": "Desmoronar",
   "modifier.tconstruct.crumbling.flavor": "¡Recompónete!",
   "modifier.tconstruct.crumbling.description": "La herramienta mina bloques que no necesitan herramienta más rápido. ¡Bueno para minar el bloque incorrecto!",
-  "modifier.tconstruct.crumbling.mining_speed": "Crumbling Speed",
+  "modifier.tconstruct.crumbling.mining_speed": "Velocidad de desmorone",
   "modifier.tconstruct.crystalbound": "Atado al cristal",
   "modifier.tconstruct.crystalbound.flavor": "El camino del cristal es recto",
   "modifier.tconstruct.crystalbound.description": "Gana daño potencial extra, pero restringe el ángulo de la flecha",
@@ -3121,7 +3118,7 @@
   "modifier.tconstruct.lightweight.flavor": "¡Como una hoja esquirlada!",
   "modifier.tconstruct.lightweight.description": "La herramienta es increíblemente ligera para su tamanño, permitiéndote atacar, minar, y arrojar proyectiles más rápido",
   "modifier.tconstruct.tasty": "Rico",
-  "modifier.tconstruct.tasty.flavor": "Om Nom Nom",
+  "modifier.tconstruct.tasty.flavor": "Ñam ñam ñam",
   "modifier.tconstruct.tasty.description": "Huele tan bien, no puedes reesistir tomar algunas mordidas de tu herramienta",
   "modifier.tconstruct.attractive": "Atractivo",
   "modifier.tconstruct.attractive.flavor": "Que flecha más bonita",
@@ -3621,7 +3618,7 @@
   "gui.tconstruct.part_builder.info": "Aquí puedes craftear partes de herramientas para cumplir tus fantasías tinkerescas.\n\nPara craftear, simplemente pon una plantilla en el slot izquierdo y selecciona la parte que quieras. El slot restante es para el material del que quieras hacer tu parte.",
   "gui.tconstruct.part_builder.material_value": "Costo de material: %s",
   "gui.tconstruct.part_builder.cost": "Costo de plantillas: %s",
-  "gui.tconstruct.part_builder.trait": "Rasgp",
+  "gui.tconstruct.part_builder.trait": "Rasgo",
   "gui.tconstruct.part_builder.uncraftable": "No se puede moldear",
   "gui.tconstruct.part_builder.uncraftable.tooltip": "El material no se puede moldear en el constructor de partes. Otros métodos como el moldeo de forja son requeridos.",
 
