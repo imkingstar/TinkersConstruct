@@ -974,7 +974,7 @@
   "fluid.tconstruct.fiery_liquid.fluid_effect": "Puede que pienses que esto es una buena idea, ¡Tantos lingotes extra! Pero recuerda, El Líquido ardiente es muy difícil de conseguir.",
 
 
-  "_comment": "Fluid effect contents",
+  "_comment": "Contenidos de efectos de fluido",
   "fluid_effect.tconstruct.separator": "%s y %s",
 
   "fluid_effect.tconstruct.extinguish_fire": "Extingue el fuego",
@@ -1025,7 +1025,7 @@
   "fluid_effect.tconstruct.melt_block": "Funde el bloque en un líquido",
 
   "fluid_effect.tconstruct.drop_item": "Suelta %s",
-  "fluid_effect.tconstruct.explosion": " Explosión de poder %s",
+  "fluid_effect.tconstruct.explosion": "Explosión de poder %s",
 
 
   "_comment": "Artilugios del tinker",
@@ -1262,8 +1262,8 @@
 
   "_comment": "Forja, compartido",
 
-  "block.tconstruct.tank.drained": "Drenado %s mb %s",
-  "block.tconstruct.tank.filled": "Llenado %s mb %s",
+  "block.tconstruct.tank.drained": "Drenado %s mb de %s",
+  "block.tconstruct.tank.filled": "Llenado %s mb de %s",
 
   "block.tconstruct.copper_gauge": "Indicador de Cobre",
   "block.tconstruct.copper_gauge.tooltip": "Interactuar con el indicador muestra la cantidad de fluido dentro del tanque detrás del indicador",
@@ -1326,7 +1326,7 @@
   "gui.tconstruct.tank.bucket.empty_item.description": "El slot intentará vaciar el item",
   "gui.tconstruct.tank.bucket.fill_item.title": "Modo: Llenar item",
   "gui.tconstruct.tank.bucket.fill_item.description": "El slot intentará llenar el item",
-  "gui.tconstruct.tank.bucket.clickable": "Haz clicl para cambiar el modo de llenado de items",
+  "gui.tconstruct.tank.bucket.clickable": "Haz click para cambiar el modo de llenado de items",
 
   "gui.tconstruct.duct": "Ducto",
 
@@ -1389,7 +1389,7 @@
   "block.tconstruct.seared_tinted_glass.tooltip": "Parte de la Forja.\nNo puede contener líquidos, y no deja pasar a la luz.",
   "block.tconstruct.seared_glass_pane": "Panel de vidrio Abrasado",
   "block.tconstruct.seared_glass_pane.tooltip": "No puede ser usado en la forja.",
-  "block.tconstruct.seared_soul_glass_pane": "Seared Soul Glass Pane",
+  "block.tconstruct.seared_soul_glass_pane": "Panel de Vidrio de Almas Abrasado",
   "block.tconstruct.seared_soul_glass_pane.tooltip": "No puede ser usado en la forja, pero puedes caminar a través de él.",
 
   "block.tconstruct.seared_ladder": "Escalera Abrasada",
@@ -1434,7 +1434,7 @@
   "block.tconstruct.seared_fluid_cannon.tooltip": "Dispara cantidades básicas de fluido al activarse con redstone.\nRetiene líquidos al romperse.",
   "block.tconstruct.scorched_fluid_cannon": "Cañón de fluidos de Cobalto",
   "block.tconstruct.scorched_fluid_cannon.tooltip": "Dispara fuertes proyectiles de fluido al activarse con redstone.\nRetiene líquidos al romperse.",
-  "entity.tconstruct.fluid_spit": "Proyectíl de fluido",
+  "entity.tconstruct.fluid_spit": "Proyectil de fluido",
 
   "block.tconstruct.smeltery_controller": "Controlador de la Forja",
   "block.tconstruct.smeltery_controller.tooltip": "El Cerebro de la Forja.",
@@ -1520,7 +1520,7 @@
 
   "block.tconstruct.foundry_controller": "Controlador de la Fundación",
   "block.tconstruct.foundry_controller.tooltip": "El Cerebro de la Fundación.",
-  "gui.tconstruct.foundry": "Foundry",
+  "gui.tconstruct.foundry": "Fundación",
 
   "block.tconstruct.scorched_drain": "Drenaje Chamuscado",
   "block.tconstruct.scorched_drain.tooltip": "Entrada y salida de fluidos para la Fundación",
@@ -1803,7 +1803,7 @@
   "material.tconstruct.rock.granite":    "Granito",
   "material.tconstruct.rock.blackstone": "Piedra negra",
   "material.tconstruct.rock.calcite":    "Calcita",
-  "material.tconstruct.rock.flavor": "Roca sólida",
+  "material.tconstruct.rock.flavor":     "Roca sólida",
   "material.tconstruct.rock.encyclopedia": "Causa que la herramienta mine más rápido por 1% veces la raíz cuadrada de la durabilidad perdida por cada nivel. El multiplicador de durabilidad de la herramienta dividirá la durabilidad perdida.",
 
   "material.tconstruct.flint": "Pedernal",
@@ -1839,7 +1839,7 @@
   "material.tconstruct.chorus.ammo": "Previene el teletransporte enemigo por 5 segundos cada nivel, y puede ser lanzada a los enderman.",
 
   "material.tconstruct.string": "Hilo",
-  "material.tconstruct.string.flavor": "Teóricamente el mejor materiall.",
+  "material.tconstruct.string.flavor": "Teóricamente el mejor material.",
   "material.tconstruct.string.encyclopedia": "Permite a las herramientas repararse usando hilo en una Estación del Tinker o mesa de fabricación",
   "material.tconstruct.string.skull_flavor": "Las arañas son expertas en pociones, Quizás sus secretos me ayuden a mejorar las mías...",
   "material.tconstruct.string.skull_encyclopedia": "Causa que los efectos de poción positivos duren un 25% más",
@@ -1852,7 +1852,7 @@
 
 
   "material.tconstruct.vine": "Enredadera",
-  "material.tconstruct.vine.flavor": "Sigue viva, no como una red social.",
+  "material.tconstruct.vine.flavor": "Cuida que no te atrape.",
   "material.tconstruct.vine.encyclopedia": "La herramienta tiene un 75% de probabilidades de resistir daño en plena luz de sol",
 
 
@@ -1896,7 +1896,7 @@
   "material.tconstruct.slimewood.greenheart":  "Palo Verde",
   "material.tconstruct.slimewood.skyroot":     "Raíz Celestial",
   "material.tconstruct.slimewood.bloodshroom": "Callampa sangrienta",
-  "material.tconstruct.slimewood.enderbark":  "Corteza Ender",
+  "material.tconstruct.slimewood.enderbark":   "Corteza Ender",
   "material.tconstruct.slimewood.flavor": "¿Es esto la madera de un slime, o un slime imbuído en madera?",
   "material.tconstruct.slimewood.encyclopedia": "Otorga un 5% de probabilidad de regenerar Sobreslime por segundo",
   "material.tconstruct.slimewood.ammo": "Causa que los proyectiles que se muevan lo suficientemente rápido reboten hasta 3 veces de los bloques que golpeen",
@@ -3022,7 +3022,7 @@
   "modifier.tconstruct.solar_powered.flavor": "Bueno para el medio ambiente",
   "modifier.tconstruct.solar_powered.description": "Tool resists damage in sunlight",
 
-  "__comment": "Tier 2 Traits",
+  "__comment": "Rasgos de tier 2",
   "modifier.tconstruct.sturdy": "Robusto",
   "modifier.tconstruct.sturdy.flavor": "¡Bien hecho!",
   "modifier.tconstruct.sturdy.description": "Hecho del hierro más fuerte",
@@ -3096,7 +3096,7 @@
   "modifier.tconstruct.entangled.flavor": "¡Simbiótico!",
   "modifier.tconstruct.entangled.description": "Aumenta la velocidad o resistencia al empuje con el coste de tomar daño al desequipar",
 
-  "__comment": "Rasgos de Tier ",
+  "__comment": "Rasgos de Tier 3",
   "modifier.tconstruct.overcast": "Sobremolde",
   "modifier.tconstruct.overcast.flavor": "¡Gruesa cobertura!",
   "modifier.tconstruct.overcast.description": "El Sobreslime puede ser extra grueso en esta herramienta",
@@ -3130,7 +3130,7 @@
   "death.attack.tconstruct.bleed": "%1$s se desangró hasta morir",
   "death.attack.tconstruct.bleed.item": "%1$s se desangró hasta morir por heridas causadas por %2$s",
 
-  "__comment": "Tier 4 Traits",
+  "__comment": "Rasgos de tier 4",
   "modifier.tconstruct.overburn": "Sobrequemar",
   "modifier.tconstruct.overburn.flavor": "¡Termal!",
   "modifier.tconstruct.overburn.description": "La herramienta consume combustible líquido para regenerar Sobreslime",
@@ -3405,13 +3405,13 @@
   "item.minecraft.tipped_arrow.effect.tconstruct.levitation":   "Flecha de Levitación",
   "item.minecraft.tipped_arrow.effect.tconstruct.enderference": "Flecha de Enderferencia",
 
-  "_comment": "Cake effects",
+  "_comment": "Efectos de tortas",
   "effect.tconstruct.bouncy": "Saltarín",
   "effect.tconstruct.double_jump": "Doble salto",
   "effect.tconstruct.antigravity": "Antigravedad",
   "effect.tconstruct.returning": "Regreso",
 
-  "_comment": "Gameplay effects",
+  "_comment": "Efectos de juego",
   "effect.tconstruct.bleeding": "Sangrado",
   "effect.tconstruct.magnetic": "Magnético",
   "effect.tconstruct.repulsive": "Repulsivo",
@@ -3421,7 +3421,7 @@
   "effect.tconstruct.venom": "Veneno",
   "effect.tconstruct.conductive": "Conductivo",
 
-  "_comment": "Internal effects",
+  "_comment": "Efectos internos",
   "effect.tconstruct.momentum_harvest": "Momentum",
   "effect.tconstruct.momentum_ranged": "Momentum",
   "effect.tconstruct.momentum_armor": "Recurrente",
@@ -3432,7 +3432,7 @@
   "effect.tconstruct.fireball_cooldown": "Enfriamiento de bola de fuego",
 
 
-  "_comment": "Roman numerals",
+  "_comment": "Números romanos",
   "roman_numeral.value.1": "I",
   "roman_numeral.value.2": "II",
   "roman_numeral.value.3": "III",
@@ -3482,11 +3482,11 @@
   "stat.tconstruct.maille": "Malla",
   "stat.tconstruct.cuirass": "Coraza",
   "tool_stat.tconstruct.armor": "Armadura: ",
-  "tool_stat.tconstruct.armor.description": "How much this protects you when worn.",
+  "tool_stat.tconstruct.armor.description": "Cuanto te proteje al equipar.",
   "tool_stat.tconstruct.armor_toughness": "Dureza de armadura: ",
-  "tool_stat.tconstruct.armor_toughness.description": "How much this armor resists high damage blows.",
-  "tool_stat.tconstruct.knockback_resistance": "Knockback Resist: ",
-  "tool_stat.tconstruct.knockback_resistance.description": "How much this armor reduces knockback.",
+  "tool_stat.tconstruct.armor_toughness.description": "Cuanto resiste esta armadura a daño alto.",
+  "tool_stat.tconstruct.knockback_resistance": "Resis. al empuje: ",
+  "tool_stat.tconstruct.knockback_resistance.description": "Cuanto reduce esta armadura el empuje.",
 
   "stat.tconstruct.handle": "Mango",
   "tool_stat.tconstruct.handle.durability.description": "La durabilidad total de la herramienta será multiplicada por esto.",
