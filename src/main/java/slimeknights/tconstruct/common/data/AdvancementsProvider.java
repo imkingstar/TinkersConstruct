@@ -275,28 +275,28 @@ public class AdvancementsProvider extends GenericDataProvider {
 
       // sorted like the modifier tag provider tags
       // general
-      withL.accept(TinkerModifiers.expanded);
+      with.accept(ModifierIds.expanded);
       with.accept(ModifierIds.gilded);
       with.accept(ModifierIds.luck);
-      withL.accept(TinkerModifiers.unbreakable);
+      with.accept(ModifierIds.unbreakable);
       withL.accept(TinkerModifiers.melting);
 
       // melee
-      withL.accept(TinkerModifiers.blocking);
+      with.accept(ModifierIds.blocking);
       withL.accept(TinkerModifiers.parrying);
       withL.accept(TinkerModifiers.dualWielding);
       with.accept(ModifierIds.spilling);
 
       // harvest
-      withL.accept(TinkerModifiers.autosmelt);
+      with.accept(ModifierIds.autosmelt);
       withL.accept(TinkerModifiers.exchanging);
-      withL.accept(TinkerModifiers.silky);
+      with.accept(ModifierIds.silky);
 
       // ranged
       with.accept(ModifierIds.bulkQuiver);
       with.accept(ModifierIds.trickQuiver);
       with.accept(ModifierIds.crystalshot);
-      withL.accept(TinkerModifiers.multishot);
+      with.accept(ModifierIds.multishot);
       with.accept(ModifierIds.ballista);
       // fishing
       with.accept(ModifierIds.grapple);
@@ -306,8 +306,8 @@ public class AdvancementsProvider extends GenericDataProvider {
       with.accept(ModifierIds.channeling);
 
       // interaction
-      withL.accept(TinkerModifiers.bucketing);
-      withL.accept(TinkerModifiers.firestarter);
+      with.accept(ModifierIds.bucketing);
+      with.accept(ModifierIds.firestarter);
       with.accept(ModifierIds.glowing);
       with.accept(ModifierIds.pathing);
       with.accept(ModifierIds.stripping);
@@ -318,10 +318,10 @@ public class AdvancementsProvider extends GenericDataProvider {
       withL.accept(TinkerModifiers.splashing);
       withL.accept(TinkerModifiers.slurping);
       // staff
-      withL.accept(TinkerModifiers.bonking);
-      withL.accept(TinkerModifiers.flinging);
-      withL.accept(TinkerModifiers.springing);
-      withL.accept(TinkerModifiers.warping);
+      with.accept(ModifierIds.bonking);
+      with.accept(ModifierIds.flinging);
+      with.accept(ModifierIds.springing);
+      with.accept(ModifierIds.warping);
       with.accept(ModifierIds.drillAttack);
 
       // armor
@@ -343,12 +343,12 @@ public class AdvancementsProvider extends GenericDataProvider {
       // boots
       with.accept(ModifierIds.bouncy);
       with.accept(ModifierIds.doubleJump);
-      withL.accept(TinkerModifiers.flamewake);
+      with.accept(ModifierIds.flamewake);
       with.accept(ModifierIds.frostWalker);
       with.accept(ModifierIds.snowdrift);
       // shield
       with.accept(ModifierIds.boundless);
-      withL.accept(TinkerModifiers.reflecting);
+      with.accept(ModifierIds.reflecting);
     });
 
     // foundry path
