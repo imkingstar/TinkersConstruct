@@ -168,11 +168,14 @@ public class ModifierIds {
   public static final ModifierId harvest = id("harvest");
   public static final ModifierId shears = id("shears");
   public static final ModifierId silkyShears = id("silky_shears");
+  public static final ModifierId splashing = id("splashing");
+  public static final ModifierId slurping = id("slurping");
   // sling
   public static final ModifierId flinging = id("flinging");
   public static final ModifierId springing = id("springing");
   public static final ModifierId bonking = id("bonking");
   public static final ModifierId warping = id("warping");
+  public static final ModifierId spitting = id("spitting");
 
   // throwing
   public static final ModifierId throwing = id("throwing");
@@ -198,6 +201,7 @@ public class ModifierIds {
   public static final ModifierId tipped = id("tipped");
   public static final ModifierId stringy = id("stringy");
   public static final ModifierId tanned = id("tanned");
+  public static final ModifierId solarPowered = id("solar_powered");
   public static final ModifierId unburdened = id("unburdened");
   public static final ModifierId depthProtection = id("depth_protection");
   public static final ModifierId enderclearance = id("enderclearance");

@@ -62,6 +62,7 @@ import slimeknights.tconstruct.library.json.variable.block.BlockVariable;
 import slimeknights.tconstruct.library.json.variable.entity.AttributeEntityVariable;
 import slimeknights.tconstruct.library.json.variable.entity.ConditionalEntityVariable;
 import slimeknights.tconstruct.library.json.variable.entity.EntityEffectLevelVariable;
+import slimeknights.tconstruct.library.json.variable.entity.EntityLightVariable;
 import slimeknights.tconstruct.library.json.variable.entity.EntityVariable;
 import slimeknights.tconstruct.library.json.variable.entity.EquipmentCountEntityVariable;
 import slimeknights.tconstruct.library.json.variable.melee.EntityMeleeVariable;
@@ -218,6 +219,9 @@ import slimeknights.tconstruct.tools.modules.interaction.HarvestModule;
 import slimeknights.tconstruct.tools.modules.interaction.PlaceFireModule;
 import slimeknights.tconstruct.tools.modules.interaction.PlaceGlowModule;
 import slimeknights.tconstruct.tools.modules.interaction.ShearsModule;
+import slimeknights.tconstruct.tools.modules.interaction.SlurpingModule;
+import slimeknights.tconstruct.tools.modules.interaction.SpittingModule;
+import slimeknights.tconstruct.tools.modules.interaction.SplashingModule;
 import slimeknights.tconstruct.tools.modules.interaction.TankInteractionModule;
 import slimeknights.tconstruct.tools.modules.interaction.ThrowingModule;
 import slimeknights.tconstruct.tools.modules.interaction.sling.SlingKnockbackModule;
@@ -795,6 +799,20 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       .addModule(new SlingLeapModule(1.05f, true, 1.0f, 2, true, LivingEntityPredicate.ELYTRA_FLYING.inverted(), ModifierCondition.ANY_TOOL));
     buildModifier(ModifierIds.bonking).levelDisplay(ModifierLevelDisplay.NO_LEVELS).addModule(new SlingKnockbackModule(3, 1.5f, 1.5f, LivingEntityPredicate.ANY, ModifierCondition.ANY_TOOL));
     buildModifier(ModifierIds.warping).levelDisplay(ModifierLevelDisplay.NO_LEVELS).addModule(new SlingTeleportModule(6, 1.5f, LivingEntityPredicate.ANY, ModifierCondition.ANY_TOOL));
+    // fluid interaction
+    buildModifier(ModifierIds.spitting).priority(120) // want to run before sling modifiers so we can sling spit, and before throwing so we use our tank first
+      .addModule(new SpittingModule(LevelingInt.eachLevel(1)))
+      .addModule(ToolTankHelper.TANK_HANDLER)
+      .addModule(StatBoostModule.add(ToolTankHelper.CAPACITY_STAT).eachLevel(FluidType.BUCKET_VOLUME));
+    buildModifier(ModifierIds.splashing)
+      .addModule(SplashingModule.INSTANCE)
+      .addModule(ToolTankHelper.TANK_HANDLER)
+      .addModule(StatBoostModule.add(ToolTankHelper.CAPACITY_STAT).eachLevel(FluidType.BUCKET_VOLUME))
+      .addModule(ShowOffhandModule.DISALLOW_BROKEN).addModule(ShowInteractionSourceModule.INSTANCE);
+    buildModifier(ModifierIds.slurping).priority(40)
+      .addModule(new SlurpingModule(LevelingInt.flat(21)))
+      .addModule(ToolTankHelper.TANK_HANDLER)
+      .addModule(StatBoostModule.add(ToolTankHelper.CAPACITY_STAT).eachLevel(FluidType.BUCKET_VOLUME));
 
     // fishing
     buildModifier(ModifierIds.fishing).levelDisplay(ModifierLevelDisplay.NO_LEVELS).addModule(FishingModule.INSTANCE).addModule(ShowInteractionSourceModule.INSTANCE);
@@ -914,6 +932,11 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
         .constant(1).add()
         // multiply into the final value
         .variable(VALUE).multiply().build());
+    buildModifier(ModifierIds.solarPowered).priority(185) // after tanned, before stoneshield
+      .addModule(ReduceToolDamageModule.builder().reinforcedTooltip().formula()
+        .customVariable("light", new EntityConditionalStatVariable(new EntityLightVariable(LightLayer.SKY), 15))
+        .constant(0.05f).multiply()
+        .build());
     buildModifier(ModifierIds.tipped).levelDisplay(ModifierLevelDisplay.SINGLE_LEVEL).addModule(TippedModule.INSTANCE);
     buildModifier(ModifierIds.soft)
       .levelDisplay(ModifierLevelDisplay.NO_LEVELS)
@@ -1085,8 +1108,8 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       .addModule(StatBoostModule.multiplyBase(OverslimeModule.OVERSLIME_STAT).eachLevel(0.5f));
     buildModifier(ModifierIds.crumbling).addModule(ConditionalMiningSpeedModule.builder().blocks(BlockPredicate.REQUIRES_TOOL.inverted()).allowIneffective().eachLevel(1f));
     buildModifier(ModifierIds.enhanced).priority(60).addModule(UPGRADE);
-    buildModifier(ModifierIds.tasty)
-      .addModule(new EdibleModule(TinkerCommons.bacon, new LevelingInt(5, 5), LevelingValue.eachLevel(0.15f)))
+    buildModifier(ModifierIds.tasty).priority(40)
+      .addModule(new EdibleModule(TinkerCommons.bacon, LevelingInt.flat(16), new LevelingInt(5, 5), LevelingValue.eachLevel(0.15f)))
       .addModule(StatBoostModule.add(EdibleModule.HUNGER).eachLevel(1))
       .addModule(StatBoostModule.add(EdibleModule.SATURATION).flat(0.6f));
     buildModifier(ModifierIds.crystalbound)
