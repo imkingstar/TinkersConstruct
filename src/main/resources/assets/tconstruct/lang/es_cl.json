@@ -3024,7 +3024,8 @@
   "modifier.tconstruct.tanned.description": "La herramienta solo puede recibir 1 de daño por acción",
   "modifier.tconstruct.solar_powered": "Energía solar",
   "modifier.tconstruct.solar_powered.flavor": "Bueno para el medio ambiente",
-  "modifier.tconstruct.solar_powered.description": "Tool resists damage in sunlight",
+  "modifier.tconstruct.solar_powered.description": "La herramienta resiste el daño bajo la luz del sol",
+  "modifier.tconstruct.solar_powered.reinforced": "Refuerzo solar",
 
   "__comment": "Rasgos de tier 2",
   "modifier.tconstruct.sturdy": "Robusto",
