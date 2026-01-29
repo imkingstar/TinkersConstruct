@@ -1033,13 +1033,13 @@
   "block.tconstruct.punji": "Estacas punji",
   "block.tconstruct.punji.tooltip": "¡Puntiagúdo! También se pega a las paredes.",
 
-  "item.tconstruct.clear_item_frame": "Marco de items claro",
-  "item.tconstruct.gold_item_frame": "Marco de items de oro",
-  "item.tconstruct.reversed_gold_item_frame": "Marco de items invertido",
-  "item.tconstruct.diamond_item_frame": "Marco de items de diamante",
-  "item.tconstruct.manyullyn_item_frame": "Marco de items de manyullyn",
-  "item.tconstruct.netherite_item_frame": "Marco de items de netherite",
-  "entity.tconstruct.item_frame": "Marco de items fabuloso",
+  "item.tconstruct.clear_item_frame": "Marco de ítems claro",
+  "item.tconstruct.gold_item_frame": "Marco de ítems de oro",
+  "item.tconstruct.reversed_gold_item_frame": "Marco de ítems invertido",
+  "item.tconstruct.diamond_item_frame": "Marco de ítems de diamante",
+  "item.tconstruct.manyullyn_item_frame": "Marco de ítems de manyullyn",
+  "item.tconstruct.netherite_item_frame": "Marco de ítems de netherite",
+  "entity.tconstruct.item_frame": "Marco de ítems fabuloso",
 
   "item.tconstruct.glow_ball": "Bola Brillante",
   "item.tconstruct.glow_ball.tooltip": "No consumir.",
@@ -1093,7 +1093,7 @@
   "block.tconstruct.part_chest.tooltip": "Contiene hasta 256 partes de herramientas",
 
   "block.tconstruct.tinkers_chest": "Cofre del Tinker",
-  "block.tconstruct.tinkers_chest.tooltip": "Contiene hasta 64 stacks de 16 Items",
+  "block.tconstruct.tinkers_chest.tooltip": "Contiene hasta 64 stacks de 16 ítems",
 
   "block.tconstruct.cast_chest": "Cofre de Moldes",
   "block.tconstruct.cast_chest.tooltip": "Contiene todos los Moldes relevantes",
@@ -1310,8 +1310,8 @@
   "death.attack.tconstruct.fluid.spike": "%1$s fue linchado por %2$s",
   "death.attack.tconstruct.fluid.spike.item": "%1$s fue linchado por %2$s usando %3$s",
 
-  "gui.tconstruct.melting.no_recipe": "Este item no puede ser fundido.",
-  "gui.tconstruct.melting.no_heat": "No hay suficiente calor para fundir este item.",
+  "gui.tconstruct.melting.no_recipe": "Este ítem no puede ser fundido.",
+  "gui.tconstruct.melting.no_heat": "No hay suficiente calor para fundir este ítem.",
   "gui.tconstruct.melting.no_space": "No hay espacio suficiente para este fluido.",
 
   "gui.tconstruct.melting.fuel.no_tank": "No hay tanque en la estructura",
@@ -1321,12 +1321,12 @@
   "gui.tconstruct.melting.fuel.invalid": "¡Combustible inválido!",
 
   "gui.tconstruct.tank.bucket.auto.title": "Modo: Automático",
-  "gui.tconstruct.tank.bucket.auto.description": "El slot intentará vaciar y luego llenar el item",
-  "gui.tconstruct.tank.bucket.empty_item.title": "Modo: Vaciar item",
-  "gui.tconstruct.tank.bucket.empty_item.description": "El slot intentará vaciar el item",
-  "gui.tconstruct.tank.bucket.fill_item.title": "Modo: Llenar item",
-  "gui.tconstruct.tank.bucket.fill_item.description": "El slot intentará llenar el item",
-  "gui.tconstruct.tank.bucket.clickable": "Haz click para cambiar el modo de llenado de items",
+  "gui.tconstruct.tank.bucket.auto.description": "El slot intentará vaciar y luego llenar el ítem",
+  "gui.tconstruct.tank.bucket.empty_item.title": "Modo: Vaciar ítem",
+  "gui.tconstruct.tank.bucket.empty_item.description": "El slot intentará vaciar el ítem",
+  "gui.tconstruct.tank.bucket.fill_item.title": "Modo: Llenar ítem",
+  "gui.tconstruct.tank.bucket.fill_item.description": "El slot intentará llenar el ítem",
+  "gui.tconstruct.tank.bucket.clickable": "Haz click para cambiar el modo de llenado de ítems",
 
   "gui.tconstruct.duct": "Ducto",
 
@@ -1415,9 +1415,9 @@
   "block.tconstruct.seared_channel.tooltip": "Distribuye los líquidos de el grifo de arriba.",
 
   "block.tconstruct.seared_basin": "Cuenco de Moldes Abrasado",
-  "block.tconstruct.seared_basin.tooltip": "Moldea items usando metales fundidos de una Forja",
+  "block.tconstruct.seared_basin.tooltip": "Moldea ítems usando metales fundidos de una Forja",
   "block.tconstruct.seared_table": "Mesa de Moldes Abrasada",
-  "block.tconstruct.seared_table.tooltip": "Moldea items usando metales fundidos de una Forja",
+  "block.tconstruct.seared_table.tooltip": "Moldea ítems usando metales fundidos de una Forja",
 
   "block.tconstruct.seared_melter": "Fundidor Abrasado",
   "block.tconstruct.seared_melter.tooltip": "Mi primera forja.\nColoca arriba de un calentador o un tanque abrasado para usar de combustible.",
@@ -1445,10 +1445,10 @@
   "block.tconstruct.seared_duct": "Ducto Abrasado",
   "block.tconstruct.seared_duct.tooltip": "Entrada y salida filtrada de fluidos para la forja usando latas de cobre o baldes",
   "block.tconstruct.seared_chute": "Tolva Abrasada",
-  "block.tconstruct.seared_chute.tooltip": "Entrada y salida de items para la forja",
+  "block.tconstruct.seared_chute.tooltip": "Entrada y salida de ítems para la forja",
 
   "block.tconstruct.seared_casting_tank": "Tanque de Moldes",
-  "block.tconstruct.seared_casting_tank.tooltip": "Automáticamente llena o vacía items dentro de él.\nRetiene líquidos al romperse.",
+  "block.tconstruct.seared_casting_tank.tooltip": "Automáticamente llena o vacía ítems dentro de él.\nRetiene líquidos al romperse.",
 
   "_comment": "La fundación del tinker",
 
@@ -1505,11 +1505,11 @@
   "block.tconstruct.scorched_faucet": "Grifo Chamuscado",
   "block.tconstruct.scorched_faucet.tooltip": "Drena líquido de Fundaciones y Tanques",
   "block.tconstruct.scorched_basin": "Cuenco de moldes chamuscado",
-  "block.tconstruct.scorched_basin.tooltip": "Moldea items usando metales fundidos de una Fundación, requiere un molde o una plataforma de oro para moldear",
+  "block.tconstruct.scorched_basin.tooltip": "Moldea ítems usando metales fundidos de una Fundación, requiere un molde o una plataforma de oro para moldear",
   "block.tconstruct.scorched_table": "Mesa de moldes chamuscada",
-  "block.tconstruct.scorched_table.tooltip": "Moldea items usando metales fundidos de una Fundación, requiere un molde o barrotes de oro para moldear",
+  "block.tconstruct.scorched_table.tooltip": "Moldea ítems usando metales fundidos de una Fundación, requiere un molde o barrotes de oro para moldear",
   "block.tconstruct.scorched_proxy_tank": "Tanque del Tinker Chamuscado",
-  "block.tconstruct.scorched_proxy_tank.tooltip": "Bloque de tanque que llena o vacía el tanque del item dentro en lugar de en un tanque interno",
+  "block.tconstruct.scorched_proxy_tank.tooltip": "Bloque de tanque que llena o vacía el tanque del ítem dentro en lugar de en un tanque interno",
 
   "block.tconstruct.scorched_channel": "Canal Chamuscado",
   "block.tconstruct.scorched_channel.tooltip": "Distribuye los líquidos de el grifo de arriba.",
@@ -1527,7 +1527,7 @@
   "block.tconstruct.scorched_duct": "Ducto Chamuscado",
   "block.tconstruct.scorched_duct.tooltip": "Entrada y salida filtrada de fluidos para la Fundación usando latas de cobre o baldes",
   "block.tconstruct.scorched_chute": "Tolva Chamuscada",
-  "block.tconstruct.scorched_chute.tooltip": "Entrada y salida de items para la fundación",
+  "block.tconstruct.scorched_chute.tooltip": "Entrada y salida de ítems para la fundación",
 
 
   "gui.tconstruct.fluid.kilobucket": "%s kb",
@@ -1861,8 +1861,8 @@
   "material.tconstruct.iron.wrought": "Hierro labrado",
   "material.tconstruct.iron.oxidized": "Hierro crudo",
   "material.tconstruct.iron.flavor": "Hierrónico. Él pudo salvar a otros de morir, pero no a si mismo.",
-  "material.tconstruct.iron.encyclopedia": "Causa que el minar bloques y golpear objetivos atraiga items a tu alrededor.",
-  "material.tconstruct.iron.ranged": "Causa qu el disparar flechas atraiga items hacia el portador.",
+  "material.tconstruct.iron.encyclopedia": "Causa que el minar bloques y golpear objetivos atraiga ítems a tu alrededor.",
+  "material.tconstruct.iron.ranged": "Causa qu el disparar flechas atraiga ítems hacia el portador.",
   "material.tconstruct.iron.armor": "Reduce el daño a los proyectiles en un 8% cada nivel, y otorga un 5% de resistencia al empuje multiplicado por el nivel.",
   "material.tconstruct.iron.skull_flavor": "Violación de cuarentena",
   "material.tconstruct.iron.skull_encyclopedia": "Los ataques cuerpo a cuerpo copian todos los efectos negativos del portador hacia el objetivo golpeado",
@@ -2059,7 +2059,7 @@
   "material.tconstruct.cobalt.flavor": "Coblato. El material del ejército rojo.",
   "material.tconstruct.cobalt.encyclopedia": "Aumenta la velocidad de minería y ataque en un 8% cada nivel",
   "material.tconstruct.cobalt.ranged": "Aumenta la velocidad de carga y velocidad en +0.03 cada nivel",
-  "material.tconstruct.cobalt.armor": "Reduce el daño de ataques cuerpo a cuerpo en un 8% cada nivel, y aumenta la velocidad al usar items en un 3% cada nivel",
+  "material.tconstruct.cobalt.armor": "Reduce el daño de ataques cuerpo a cuerpo en un 8% cada nivel, y aumenta la velocidad al usar ítems en un 3% cada nivel",
 
   "material.tconstruct.quartz": "Cuarzo",
   "material.tconstruct.quartz.flavor": "¡Filoso!",
@@ -2073,7 +2073,7 @@
   "material.tconstruct.shulker": "Caparazón de shulker",
   "material.tconstruct.shulker.flavor": "¡Irrompible!",
   "material.tconstruct.shulker.armor": "Otorga +10% resistencia mientras ta agachas, pero disminuye el daño de ataque en 10% cada nivel mientras lo haces.",
-  "material.tconstruct.shulker.ammo": "Hace que los proyectiles no se destruyan al impactar contra un objetivo, haciéndolos infinitamente reciclables. Adicionalmente, el item no se despawneará.",
+  "material.tconstruct.shulker.ammo": "Hace que los proyectiles no se destruyan al impactar contra un objetivo, haciéndolos infinitamente reciclables. Adicionalmente, el ítem no se despawneará.",
 
   "material.tconstruct.manyullyn": "Manyullyn",
   "material.tconstruct.manyullyn.flavor": "El metal que la mayoría de Tinkers no sabe pronunciar. También conocido como el metal corta-estrellas.",
@@ -2146,7 +2146,7 @@
   "material.tconstruct.knightmetal.flavor": "El metal del slime viajero, también encontrado por criaturas armadas de Twilight.",
   "material.tconstruct.knightmetal.encyclopedia": "Otorga +0.5 de daño cada nivel por pieza de armadura llebvada por el objetivo",
   "material.tconstruct.knightmetal.ranged": "Otorga +0.25 de daño cada nivel por pieza de armadura llevada por el objetivo (aplica antes de la velocidad)",
-  "material.tconstruct.knightmetal.armor": "Aumenta la protección por 4% cada nivel por item en las manos del atacante",
+  "material.tconstruct.knightmetal.armor": "Aumenta la protección por 4% cada nivel por ítem en las manos del atacante",
   "material.tconstruct.knightmetal.format": "%s del Caballero de metal",
 
   "material.tconstruct.knightly": "Metal Caballeroso",
@@ -2207,7 +2207,7 @@
   "material.tconstruct.aluminum": "Aluminio",
   "material.tconstruct.aluminum.flavor": "Encontrado comúnmente cerca de los ceniceros.",
   "material.tconstruct.aluminum.ranged": "Otorga +7% de velocidad de carga y precisión con el coste de perder 5% de protección",
-  "material.tconstruct.aluminum.armor": "Otorga +5% velocidad al usar items con el coste de perder 5% de protección",
+  "material.tconstruct.aluminum.armor": "Otorga +5% velocidad al usar ítems con el coste de perder 5% de protección",
 
   "material.tconstruct.treated_wood": "Madera tratada",
   "material.tconstruct.treated_wood.flavor": "¡Slán go fóill!",
@@ -2350,7 +2350,7 @@
   "modifier.tconstruct.experienced.description": "Consigue experiencia extra al minar bloques o matar mobs",
   "modifier.tconstruct.magnetic": "Magnético",
   "modifier.tconstruct.magnetic.flavor": "¡Atractivo!",
-  "modifier.tconstruct.magnetic.description": "¡¿Golpear cosas atrae items cercanos?!",
+  "modifier.tconstruct.magnetic.description": "¡¿Golpear cosas atrae ítems cercanos?!",
 
   "modifier.tconstruct.haste": "Prisa I",
   "modifier.tconstruct.haste.2": "Prisa II",
@@ -2620,9 +2620,9 @@
   "modifier.tconstruct.aqua_affinity": "Afinidad acuática",
   "modifier.tconstruct.aqua_affinity.flavor": "¡Se uno/a con el mar!",
   "modifier.tconstruct.aqua_affinity.description": "Remueve la penalización al minar bajo el agua",
-  "modifier.tconstruct.item_frame": "Marco de items",
+  "modifier.tconstruct.item_frame": "Marco de ítems",
   "modifier.tconstruct.item_frame.flavor": "Lo veo todo",
-  "modifier.tconstruct.item_frame.description": "Añade slots de inventario al casco para añadir items a tu pantalla. Perfecto para relojes y compases",
+  "modifier.tconstruct.item_frame.description": "Añade slots de inventario al casco para añadir ítems a tu pantalla. Perfecto para relojes y compases",
   "modifier.tconstruct.minimap": "Minimaps",
   "modifier.tconstruct.minimap.flavor": "El sueño del explorador",
   "modifier.tconstruct.minimap.description": "Añade un slot de inventario al casco para llenar con un mapa",
@@ -2638,7 +2638,7 @@
   "modifier.tconstruct.strength.description": "Hace a tus armas más fuertes",
   "modifier.tconstruct.sleeves": "Mangas",
   "modifier.tconstruct.sleeves.flavor": "¡Ideal para shurikens!",
-  "modifier.tconstruct.sleeves.description": "Le da a la pechera 9 slots para items arrojables, los cuales pueden ser arrojados al interactuar con una mano vacía.",
+  "modifier.tconstruct.sleeves.description": "Le da a la pechera 9 slots para ítems arrojables, los cuales pueden ser arrojados al interactuar con una mano vacía.",
   "modifier.tconstruct.sleeves.disabled": "Mangas: Desactivadas",
   "modifier.tconstruct.sleeves.selected": "Mangas: Seleccionado %s del slot %s",
   "modifier.tconstruct.ambidextrous": "Ambidiestro",
@@ -2660,7 +2660,7 @@
   "modifier.tconstruct.leaping.description": "Los slimes celestiales pueden hacer saltos altos, así que esto debería permitirte hacer lo mismo",
   "modifier.tconstruct.pockets": "Bolsillos",
   "modifier.tconstruct.pockets.flavor": "¡Maravillosa invención!",
-  "modifier.tconstruct.pockets.description": "Los pantalones tienen bolsillos, permitiéndote almacenar items adicionales al agacharte e interactuar",
+  "modifier.tconstruct.pockets.description": "Los pantalones tienen bolsillos, permitiéndote almacenar ítems adicionales al agacharte e interactuar",
   "modifier.tconstruct.shield_strap": "Correa de escudos",
   "modifier.tconstruct.shield_strap.flavor": "Ideal para proteger y atacar",
   "modifier.tconstruct.shield_strap.description": "Interactuar con los pantalones te permite ciclar entre objetos en la mano secundarioa",
@@ -2681,7 +2681,7 @@
   "modifier.tconstruct.crafting_table.flavor": "¡Una mesa entera en tus bolsillos!",
   "modifier.tconstruct.crafting_table.description": "Otorga una mesa de crafteo completa en el inventario de la herramienta",
 
-  "modifier.tconstruct.inventory_cannot_remove": "Hacer este cambio hará que un item dentro de la herramienta sea destruido",
+  "modifier.tconstruct.inventory_cannot_remove": "Hacer este cambio hará que un ítem dentro de la herramienta sea destruido",
 
   "_comment": "Armadura - Botas",
   "modifier.tconstruct.feather_falling": "Caída de pluma",
@@ -2737,7 +2737,7 @@
   "_comment": "Botín",
   "modifier.tconstruct.silky": "Sedoso",
   "modifier.tconstruct.silky.flavor": "¡Suave como la seda!",
-  "modifier.tconstruct.silky.description": "Los bloques minados se sueltan a si mismos en lugar de el item usual",
+  "modifier.tconstruct.silky.description": "Los bloques minados se sueltan a si mismos en lugar de el ítem usual",
   "modifier.tconstruct.autosmelt": "Autohornear",
   "modifier.tconstruct.autosmelt.flavor": "¡Las llamas del nether en tu herramienta!",
   "modifier.tconstruct.autosmelt.description": "La herramienta hornea automáticamente todos los drops",
@@ -2819,7 +2819,7 @@
   "modifier.tconstruct.bonking": "Golpear",
   "modifier.tconstruct.bonking.flavor": "Empuje Ícor",
   "modifier.tconstruct.bonking.description": "¡Carga, apunta a un enemigo, y golpéalos lejos!",
-  "modifier.tconstruct.warping": "teleortar",
+  "modifier.tconstruct.warping": "Teleportar",
   "modifier.tconstruct.warping.flavor": "Transporte Ender",
   "modifier.tconstruct.warping.description": "¡Carga, apunta a una pared, y telepórtate al otro lugar!",
 
@@ -2860,13 +2860,13 @@
   "modifier.tconstruct.grapple.requirements": "Gancho requiere Pesca",
   "modifier.tconstruct.collecting": "Recolección",
   "modifier.tconstruct.collecting.flavor": "¡Mío!",
-  "modifier.tconstruct.collecting.description": "Permite a la caña de pescar enganchar items, experiencia, flechas, y armas arrojadas.",
+  "modifier.tconstruct.collecting.description": "Permite a la caña de pescar enganchar ítems, experiencia, flechas, y armas arrojadas.",
   "modifier.tconstruct.collecting.requirements": "Recolección requiere pesca",
 
   "_comment": "Fluidos",
   "modifier.tconstruct.melting": "Derretir",
   "modifier.tconstruct.melting.flavor": "¡El poder del derretidor en un palo!",
-  "modifier.tconstruct.melting.description": "¡Funde las entidades atacadas y los items que suelten!",
+  "modifier.tconstruct.melting.description": "¡Funde las entidades atacadas y los ítems que suelten!",
   "modifier.tconstruct.tank": "Tanque",
   "modifier.tconstruct.tank.flavor": "¡Mientras más grande mejor!",
   "modifier.tconstruct.tank.description": "Añade un tanque de 1000mb a la herramienta, permitiendo almacenar fluido",
@@ -2971,7 +2971,7 @@
 
   "modifier.tconstruct.smelting": "Hornear",
   "modifier.tconstruct.smelting.flavor": "Que rico tocino frito",
-  "modifier.tconstruct.smelting.description": "¡Usar la herramienta cocina los items dentro! Llena la herramienta al interactuar agachándote.",
+  "modifier.tconstruct.smelting.description": "¡Usar la herramienta cocina los ítems dentro! Llena la herramienta al interactuar agachándote.",
 
   "__comment": "Rasgos de Tier 1",
 
@@ -3006,7 +3006,7 @@
   "modifier.tconstruct.enderclearance.description": "Tiene una probabilidad de teletransportar objetivos",
   "modifier.tconstruct.unburdened": "Alivio",
   "modifier.tconstruct.unburdened.flavor": "De fácil uso",
-  "modifier.tconstruct.unburdened.description": "La velocidad de movimiento se reduce menos al usar el item.",
+  "modifier.tconstruct.unburdened.description": "La velocidad de movimiento se reduce menos al usar el ítem.",
   "modifier.tconstruct.woodwind": "Viento de madera",
   "modifier.tconstruct.woodwind.flavor": "Canción del viento",
   "modifier.tconstruct.woodwind.description": "Te mueves más libremente en el viento, dando un bono de precisisón mayor, y un bono de velocidad a la munición arrojada. Algunos incluso dicen que escuchan música mientras vuela",
@@ -3466,7 +3466,7 @@
   "tool_stat.tconstruct.durability": "Durabilidad: ",
   "tool_stat.tconstruct.durability.description": "Valor base para los cálculos de durabilidad.\nUsualmente una parte íntegra para la durabilidad de una herramienta.",
   "tool_stat.tconstruct.use_item_speed": "Velocidad de uso: ",
-  "tool_stat.tconstruct.use_item_speed.description": "Multiplicador de velocidad al usar una item como un arco o escudo.",
+  "tool_stat.tconstruct.use_item_speed.description": "Multiplicador de velocidad al usar una ítem como un arco o escudo.",
 
   "stat.tconstruct.head": "Cabeza",
   "tool_stat.tconstruct.mining_speed": "Velocidad minera: ",
@@ -3567,7 +3567,7 @@
   "stat.tconstruct.slot.display.traits": "rasgo",
 
   "armor_stat.tconstruct.mining_speed": "Velocidad minera",
-  "armor_stat.tconstruct.use_item_speed": "Velocidad al usar items",
+  "armor_stat.tconstruct.use_item_speed": "Velocidad al usar ítems",
   "armor_stat.tconstruct.experience": "Experiencia",
   "armor_stat.tconstruct.critical_damage": "Daño crítico",
   "armor_stat.tconstruct.good_effect_duration": "Tiempo de poción buena",
@@ -3575,7 +3575,7 @@
   "armor_stat.tconstruct.crouch_damage": "Daño al agachar",
   "armor_stat.tconstruct.knockback": "Empuje",
 
-  "attribute.name.tconstruct.player.use_item_speed": "Velocidad al usar items",
+  "attribute.name.tconstruct.player.use_item_speed": "Velocidad al usar ítems",
   "attribute.name.tconstruct.player.critical_damage": "Daño crítico",
   "attribute.name.tconstruct.player.mining_speed_multiplier": "Velocidad minera",
   "attribute.name.tconstruct.player.experience_multiplier": "Experiencia",
@@ -3611,7 +3611,7 @@
 
   "_comment": "Interfáz",
 
-  "itemGroup.tconstruct.general": "Items generales del Tinker",
+  "itemGroup.tconstruct.general": "ítems generales del Tinker",
   "itemGroup.tconstruct.tables": "Mesas del Tinker",
   "itemGroup.tconstruct.tools": "Herramientas del Tinker",
   "itemGroup.tconstruct.tool_parts": "Partes del Tinker",
@@ -3620,7 +3620,7 @@
   "itemGroup.tconstruct.world": "Mundo del Tinker",
 
   "gui.tconstruct.crafting_station": "Estación de crafteo",
-  "gui.tconstruct.crafting_station.uncraftable": "Este item no se puede craftear actualmente por el jugador",
+  "gui.tconstruct.crafting_station.uncraftable": "Este ítem no se puede craftear actualmente por el jugador",
 
   "gui.tconstruct.part_builder": "Constructor de partes",
   "gui.tconstruct.part_builder.info": "Aquí puedes craftear partes de herramientas para cumplir tus fantasías tinkerescas.\n\nPara craftear, simplemente pon una plantilla en el slot izquierdo y selecciona la parte que quieras. El slot restante es para el material del que quieras hacer tu parte.",
@@ -3661,13 +3661,13 @@
   "recipe.tconstruct.modifier_set_worktable.empty": "La herramienta no tiene modificadores aptos",
 
   "recipe.tconstruct.remove_modifier.modifiers": "Quitar modificadores",
-  "recipe.tconstruct.remove_modifier.description": "Selecciona un modificador para quitar. Los slots del modificador serán regresados, el fluido será consumido de el item dado y el contenedor devuelto.",
+  "recipe.tconstruct.remove_modifier.description": "Selecciona un modificador para quitar. Los slots del modificador serán regresados, el fluido será consumido de el ítem dado y el contenedor devuelto.",
   "recipe.tconstruct.remove_modifier.no_modifiers": "La herramienta no tieme modificadores que esta receta puedan quitar",
 
   "recipe.tconstruct.modifier_sorting.title": "Ordenar modificadores",
-  "recipe.tconstruct.modifier_sorting.description": "Selecciona un modificador para cambiar su lugar con otro adyacente. No consume items para cambiar.",
-  "recipe.tconstruct.modifier_sorting.description.forward": "Selecciona un modificador para cambiar su lugar con uno previo en la lista. No consume items para cambiar.",
-  "recipe.tconstruct.modifier_sorting.description.reversed": "Selecciona un modificador para cambiar su lugar con uno previo en la lista. No consume items para cambiar",
+  "recipe.tconstruct.modifier_sorting.description": "Selecciona un modificador para cambiar su lugar con otro adyacente. No consume ítems para cambiar.",
+  "recipe.tconstruct.modifier_sorting.description.forward": "Selecciona un modificador para cambiar su lugar con uno previo en la lista. No consume ítems para cambiar.",
+  "recipe.tconstruct.modifier_sorting.description.reversed": "Selecciona un modificador para cambiar su lugar con uno previo en la lista. No consume ítems para cambiar",
   "recipe.tconstruct.modifier_sorting.not_enough_modifiers": "La herramienta necesita al menos 2 modificadores para ordenar",
 
   "recipe.tconstruct.invisible_modifiers.adding.title": "Tinta invisible",
@@ -3688,10 +3688,10 @@
   "recipe.tconstruct.extract_modifier.description": "Selecciona un modificador para extraerlo en un cristal. Los slots usados serán devueltos.",
   "recipe.tconstruct.extract_modifier.no_modifiers": "La herramienta no tiene slots extraíbles por la receta",
 
-  "recipe.tconstruct.enchantment_converting.description.lost": "Selecciona un modificador del tipo dado por el libro encantado para extrerlo como cristal. El item encantado se perderá.",
-  "recipe.tconstruct.enchantment_converting.description.keep": "Selecciona un modificador del tipo dado por el libro encantado para extrerlo como cristal. El item será devuelto sin el encantamiento.",
-  "recipe.tconstruct.enchantment_converting.no_enchantments": "El item no tiene encantamientos aplicables",
-  "recipe.tconstruct.enchantment_converting.too_few": "Necesitas proveer más items para convertir un libro de nivel mayor",
+  "recipe.tconstruct.enchantment_converting.description.lost": "Selecciona un modificador del tipo dado por el libro encantado para extrerlo como cristal. El ítem encantado se perderá.",
+  "recipe.tconstruct.enchantment_converting.description.keep": "Selecciona un modificador del tipo dado por el libro encantado para extrerlo como cristal. El ítem será devuelto sin el encantamiento.",
+  "recipe.tconstruct.enchantment_converting.no_enchantments": "El ítem no tiene encantamientos aplicables",
+  "recipe.tconstruct.enchantment_converting.too_few": "Necesitas proveer más ítems para convertir un libro de nivel mayor",
 
   "recipe.tconstruct.part_swapping.too_many_parts": "La mesa es demasiado pequeña para cambiar las partes de la herramienta",
   "recipe.tconstruct.part_swapping.too_few_inputs": "El stack de la herramienta es demasiado pequeño para cambiar las partes",
@@ -3711,8 +3711,8 @@
   "recipe.tconstruct.tool_recycling.info": "Selecciona la parte para salvar de la herramienta. Hay una probabilidad basada en la durabilidad restante de salvar una segunda parte.",
   "recipe.tconstruct.tool_recycling.no_modifiers": "Una herramienta no se puede reciclar si tiene mejoras o habilidades, deben ser removidos antes de reciclar.",
   "recipe.tconstruct.recycling": "Reciclando",
-  "recipe.tconstruct.recycling.info": "Selecciona un item para reciclar. Basado en la durabilidad, quizás puedas salvar items no seleccionados.",
-  "recipe.tconstruct.recycling.not_enough_durability": "El item no tiene suficiente durabilidad para salvar algo.",
+  "recipe.tconstruct.recycling.info": "Selecciona un ítem para reciclar. Basado en la durabilidad, quizás puedas salvar ítems no seleccionados.",
+  "recipe.tconstruct.recycling.not_enough_durability": "El ítem no tiene suficiente durabilidad para salvar algo.",
   "recipe.tconstruct.recycling.no_enchantments": "La herramienta no se puede reciclar si está encantada, usa una afiladora antes de reciclar.",
 
 
@@ -3732,7 +3732,7 @@
   "_comment": "Subtítulos",
 
   "subtitles.tconstruct.little_saw": "Sierra usada",
-  "subtitles.tconstruct.item_frame_click": "Marco de items gira",
+  "subtitles.tconstruct.item_frame_click": "Marco de ítems gira",
   "subtitles.tconstruct.casting_cools": "Item moldeado se enfría",
   "subtitles.tconstruct.casting.click": "Bloque moldeado suena",
 
@@ -3807,59 +3807,59 @@
   "command.tconstruct.modifier_usage": "Impreso el uso del modificador en el registro de juego",
   "command.tconstruct.modifier_priority": "Impreso la prioridad del modificador en el registro de juego",
 
-  "command.tconstruct.modifiers.success.add.single": "Aplicado el modificador %s al item de %s",
+  "command.tconstruct.modifiers.success.add.single": "Aplicado el modificador %s al ítem de %s",
   "command.tconstruct.modifiers.success.add.multiple": "Aplicado el modificador %s a %s entidades",
-  "command.tconstruct.modifiers.success.remove.single": "Removido el modificador %s del item de %s",
+  "command.tconstruct.modifiers.success.remove.single": "Removido el modificador %s del ítem de %s",
   "command.tconstruct.modifiers.success.remove.multiple": "Removido el modificador %s a %s entidades",
-  "command.tconstruct.modifiers.failure.too_few_levels": "No se puede remover el modificador %s de el item de %s",
+  "command.tconstruct.modifiers.failure.too_few_levels": "No se puede remover el modificador %s de el ítem de %s",
 
-  "command.tconstruct.materials.success.set.single": "Establecido el material de %s a %s en el item de %s",
+  "command.tconstruct.materials.success.set.single": "Establecido el material de %s a %s en el ítem de %s",
   "command.tconstruct.materials.success.set.multiple": "Establecido el material de %s a %s en %s entidades",
-  "command.tconstruct.materials.failure.invalid_index": "El índice %s es demasiado alto para el item de %s",
+  "command.tconstruct.materials.failure.invalid_index": "El índice %s es demasiado alto para el ítem de %s",
   "command.tconstruct.materials.success.stats.default": "Estadísticas predeterminadas para %s:",
   "command.tconstruct.materials.success.stats.material": "%s estadísticas para %s:",
   "command.tconstruct.materials.failure.invalid_stats": "No estadísticas %s registradas para %s",
   "command.tconstruct.materials.success.traits.default": "Rasgos predeterminados para %s:",
-  "command.tconstruct.materials.success.traits.stat": "%s rasgos para %s:",
+  "command.tconstruct.materials.success.traits.stat": "Rasgo de %2$s para %1$s:",
   "command.tconstruct.materials.failure.no_traits": "Sin rasgos",
 
-  "command.tconstruct.slots.success.add.single": "Aplicado(s) %s %s slots al item de %s",
+  "command.tconstruct.slots.success.add.single": "Aplicado(s) %s %s slots al ítem de %s",
   "command.tconstruct.slots.success.add.multiple": "Aplicado(s) %s %s slots a %s entidades",
-  "command.tconstruct.slots.success.set.single": "Establecidos %s slots a %s al item de %s",
+  "command.tconstruct.slots.success.set.single": "Establecidos %s slots a %s al ítem de %s",
   "command.tconstruct.slots.success.set.multiple": "Establecidos %s slots a %s a %s entidades",
   "command.tconstruct.slots.failure.invalid_count": "No se pueden aplicar cero slots, debes añadir un número negativo o positivo",
 
-  "command.tconstruct.stats.success.bonus.modify.single": "%Aumentado por %s al item de %s",
-  "command.tconstruct.stats.success.bonus.modify.multiple": "%Aumentado por %s a %s entidades",
-  "command.tconstruct.stats.success.bonus.set.single": "%sEstablecido bonus a %s al item de %s",
+  "command.tconstruct.stats.success.bonus.modify.single": "%sAumentado por %s al ítem de %s",
+  "command.tconstruct.stats.success.bonus.modify.multiple": "%sAumentado por %s a %s entidades",
+  "command.tconstruct.stats.success.bonus.set.single": "%sEstablecido bonus a %s al ítem de %s",
   "command.tconstruct.stats.success.bonus.set.multiple": "%sEstablecido bonus a %s a %s entidades",
   "command.tconstruct.stats.success.bonus.set.parse_fail": "%sFalló en registrar %s",
 
-  "command.tconstruct.stats.success.multiply.modify.single": "%sMultiplicado por %s al item de %s",
+  "command.tconstruct.stats.success.multiply.modify.single": "%sMultiplicado por %s al ítem de %s",
   "command.tconstruct.stats.success.multiply.modify.multiple": "%sMultiplicado por %s a %s entidades",
-  "command.tconstruct.stats.success.multiply.set.single": "%sEstablecido el multiplicador a %s al item de %s",
-  "command.tconstruct.stats.success.multiply.set.multiple": "%sSet multiplier to %s on %s entidades",
+  "command.tconstruct.stats.success.multiply.set.single": "%sEstablecido el multiplicador a %s al ítem de %s",
+  "command.tconstruct.stats.success.multiply.set.multiple": "%sEstablecido el multiplicador a %s en %s entidades",
 
-  "command.tconstruct.stats.success.reset.all.single": "Reestablecidos todos los bonos y multiplicadores de estadísticas al item de %s",
+  "command.tconstruct.stats.success.reset.all.single": "Reestablecidos todos los bonos y multiplicadores de estadísticas al ítem de %s",
   "command.tconstruct.stats.success.reset.all.multiple": "Reestablecidos todos los bonos y multiplicadores de estadísticas a %s entidades",
-  "command.tconstruct.stats.success.reset.stat.single": "%sReestablecidos bonos y multiplicadores al item de %s",
+  "command.tconstruct.stats.success.reset.stat.single": "%sReestablecidos bonos y multiplicadores al ítem de %s",
   "command.tconstruct.stats.success.reset.stat.multiple": "%sReestablecidos bonos y multiplicadores a %s entidades",
 
   "command.tconstruct.stats.failure.invalid_add": "No puedes añadir cero a una estadística, debes añadir un número negativo o positivo",
   "command.tconstruct.stats.failure.invalid_multiply": "No puedes multiplicar estadísticas por 1, debes multiplicar por un número positivo diferente",
 
-  "command.tconstruct.held_modifiable.failed": "Nada cambió. Targets have no modifiable item in their hands or no targets were found",
-  "command.tconstruct.held_modifiable.failed.nonliving": "%s is not a valid entity for this command",
-  "command.tconstruct.held_modifiable.failed.no_item": "%s is not holding any item",
-  "command.tconstruct.held_modifiable.failed.invalid_item": "%s is not holding a modifiable item",
+  "command.tconstruct.held_modifiable.failed": "Nada cambió. El objetivo no tiene ningún ítem modificable en sus manos o ningún objetivo fue encontrado",
+  "command.tconstruct.held_modifiable.failed.nonliving": "%s no es una entidad válida para este comando",
+  "command.tconstruct.held_modifiable.failed.no_item": "%s no está sosteniendo nignún ítem",
+  "command.tconstruct.held_modifiable.failed.invalid_item": "%s no está sosteniendo nignún ítem modificable",
 
   "command.tconstruct.generate_part_textures.start": "Iniciada la generación de texturas de partes",
   "command.tconstruct.generate_part_textures.finish": "Generadas exitosamente %s texturas de partes en %s segundos en %s",
   "command.tconstruct.generate_part_textures.failure": "Fallada la generación de texturas de partes luego de %s s: %s. Mira el registro para más detalles.",
   "command.tconstruct.generate_part_textures.no_materials": "No hay materiales que tengan información de generador, nada que generar",
   "command.tconstruct.generate_part_textures.no_parts": "No hay sprites de partes en los paquetes de recursos",
-  "command.tconstruct.generate_hidden_fluids": "Añadidos exitosamente %s entradas a la etiqueta de fluidos '%s'. Usa /reload para activar el paquete en %s.", 
 
+  "command.tconstruct.generate_hidden_fluids": "Añadidos exitosamente %s entradas a la etiqueta de fluidos '%s'. Usa /reload para activar el paquete en %s.", 
   "command.tconstruct.generate.melting_recipes": "Generadas exitosamente %s recetas de derretimiento en %s segundos. Usa /reload para activar el paquete en %s",
 
 
@@ -3872,8 +3872,8 @@
 
   "jei.tconstruct.casting.basin": "Cuenco de moldes",
   "jei.tconstruct.casting.table": "Mesa de moldes",
-  "jei.tconstruct.casting.cast_kept": "El item moldeado se puede reusar para otras recetas",
-  "jei.tconstruct.casting.cast_consumed": "El item moldeado es consumido al moldear",
+  "jei.tconstruct.casting.cast_kept": "El ítem moldeado se puede reusar para otras recetas",
+  "jei.tconstruct.casting.cast_consumed": "El ítem moldeado es consumido al moldear",
 
   "jei.tconstruct.molding.title": "Moldear",
   "jei.tconstruct.molding.pattern_consumed": "La plantila es consumida al craftear",
@@ -3905,8 +3905,8 @@
 
   "jei.tconstruct.severing.title": "Desmembramiento",
 
-  "jei.tconstruct.tinkering.tool_building": "Construir herramientas",
-  "jei.tconstruct.tinkering.tool_building.anvil": "Herramientas brutas requieren un yunque del tinker para ser creadas o cambiar partes",
+  "jei.tconstruct.tinkering.tool_building": "Armar Herramientas",
+  "jei.tconstruct.tinkering.tool_building.anvil": "Las Herramientas brutas requieren un yunque del tinker para ser creadas o cambiar partes",
 
   "jei.tconstruct.part_builder.title": "Constructor de partes",
   "jei.tconstruct.part_builder.cost": "Coste: %s",
