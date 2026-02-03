@@ -163,6 +163,12 @@
   "item.tconstruct.knightmetal_ingot": "Lingote Hecho del Caballero de metal",
   "item.tconstruct.knightmetal_nugget": "Pepita Hecha del Caballero de metal",
 
+  "block.tconstruct.knightslime_block": "Bloque de Slime Caballero",
+  "item.tconstruct.knightslime_ingot": "Lingote de Slime Caballero",
+  "item.tconstruct.knightslime_ingot.tooltip": "Puede usarse como base puntiaguda para el faro",
+  "item.tconstruct.knightslime_nugget": "Pepita de Slime Caballero",
+
+
   "block.tconstruct.soulsteel_block": "Bloque de Acero de Almas",
   "block.tconstruct.soulsteel_block.tooltip": "Puede usarse como base para el faro",
   "item.tconstruct.soulsteel_ingot": "Lingote de Acero de Almas",
@@ -174,11 +180,6 @@
 
 
   "__comment": "Metales de Tier 5",
-
-  "block.tconstruct.knightslime_block": "Bloque de Slime Caballero",
-  "item.tconstruct.knightslime_ingot": "Lingote de Slime Caballero",
-  "item.tconstruct.knightslime_ingot.tooltip": "Pegajoso aunque metálico, ¿Pero también piedroso? ¡Facinante!",
-  "item.tconstruct.knightslime_nugget": "Pepita de Slime Caballero",
 
   "item.tconstruct.materials_and_you": "Materiales y tú",
   "item.tconstruct.materials_and_you.tooltip": "El libro de introducción hacia los materiales y herramientas\nPor Selena",
@@ -353,7 +354,7 @@
   "pattern.tconstruct.tough_handle": "Mango bruto",
   "pattern.tconstruct.bow_grip": "Agarre de arco",
   "pattern.tconstruct.arrow_shaft": "Cuerpo de flecha",
-  "pattern.tconstruct.fletching": "Plumaje de flecha",
+  "pattern.tconstruct.fletching": "Emplumado",
   "pattern.tconstruct.arrow_part": "Cabeza o cuerpo de flecha",
 
 
@@ -1048,12 +1049,12 @@
   "item.tconstruct.efln_ball.tooltip": "¡Explota! Es seguro para la minería",
   "entity.tconstruct.efln_ball": "EFLN",
 
-  "item.tconstruct.quartz_shuriken": "Shuriken de Cuarzo",
+  "item.tconstruct.quartz_shuriken": "Shúriken de Cuarzo",
   "item.tconstruct.quartz_shuriken.tooltip": "Un arma arrojable con más daño",
-  "entity.tconstruct.quartz_shuriken": "Shuriken de Cuarzo",
-  "item.tconstruct.flint_shuriken": "Shuriken de Pedernal",
+  "entity.tconstruct.quartz_shuriken": "Shúriken de Cuarzo",
+  "item.tconstruct.flint_shuriken": "Shúriken de Pedernal",
   "item.tconstruct.flint_shuriken.tooltip": "Una arma arrojable con un empuje alto",
-  "entity.tconstruct.flint_shuriken": "Shuriken de Pedernal",
+  "entity.tconstruct.flint_shuriken": "Shúriken de Pedernal",
 
   "block.tconstruct.earth_cake": "Torta de Slime Terrestre",
   "block.tconstruct.sky_cake":   "Torta de Slime Celestial",
@@ -1102,13 +1103,13 @@
 
   "_comment": "Herramientas del Tinker",
 
-  "_comment_on_format_": "These format allows you to have more control over separators in material names. By default we separate with space. You can use %1$s and %2$s if you wish to change the order.",
+  "_comment_on_format_": "Este formato te permite tener más control de los separadores en los nombres de los materiales. Por defecto, se separa con un espacio. Puedes usar %1$s y %2$s para cambiar el orden.",
   "item.tconstruct.tool.format": "%2$s de %1$s",
   "item.tconstruct.tool.id_format": "%s (%s)",
   "item.tconstruct.tool.material_separator": " y ",
 
   "entity.tconstruct.arrow": "Flecha",
-  "entity.tconstruct.thrown_shuriken": "Shuriken",
+  "entity.tconstruct.thrown_shuriken": "Shúriken",
   "entity.tconstruct.thrown_tool": "Herramienta arrojada",
   "entity.tconstruct.fishing_bobber": "Boya de pesca",
 
@@ -1128,14 +1129,14 @@
 
   "item.tconstruct.dagger": "Daga",
   "item.tconstruct.sword": "Espada",
-  "item.tconstruct.cleaver": "Espada Larga",
+  "item.tconstruct.cleaver": "Mandoble",
 
   "item.tconstruct.crossbow": "Ballesta",
   "item.tconstruct.longbow": "Arco largo",
   "item.tconstruct.fishing_rod": "Caña de pescar",
   "item.tconstruct.javelin": "Javalina",
   "item.tconstruct.arrow": "Flecha",
-  "item.tconstruct.shuriken": "Shuriken",
+  "item.tconstruct.shuriken": "Shúriken",
   "item.tconstruct.throwing_axe": "Hacha Arrojadiza",
 
   "item.tconstruct.flint_and_brick": "Encendedor del Tinker",
@@ -1147,7 +1148,7 @@
   "item.tconstruct.melting_pan": "Sartén Derretidor",
   "item.tconstruct.battlesign": "Cartel de Batalla",
   "item.tconstruct.war_pick": "Picota de batalla",
-  "item.tconstruct.swasher": "Swasher",
+  "item.tconstruct.swasher": "Bucanera",
   "item.tconstruct.minotaur_axe": "Hacha del minotauro",
   
   "item.tconstruct.travelers_helmet": "Lentes del Viajero",
@@ -1215,7 +1216,7 @@
   "item.tconstruct.bowstring": "Cuerda de Arco",
   "item.tconstruct.arrow_head": "Cabeza de Flecha",
   "item.tconstruct.arrow_shaft": "Cuerpo de Flecha",
-  "item.tconstruct.fletching": "Plumaje de Flecha",
+  "item.tconstruct.fletching": "Emplumado",
 
   "item.tconstruct.helmet_plating": "Blindaje de Casco",
   "item.tconstruct.chestplate_plating": "Blindaje de Pechera",
@@ -1247,7 +1248,7 @@
 
   "item.tconstruct.dagger.description": "La Daga es una arma ligera, capaz de golpear de cualquier mano.",
   "item.tconstruct.sword.description": "La Espada es un arma universal. Ataques de arrasamiento para luchar con hartos enemigos .\n¡Útil también para las telarañas!",
-  "item.tconstruct.cleaver.description": "La Espada Larga es una arma para un maestro de la Forja. ¡Ataques lentos pero voráces para hacerle frente incluso a los más temibles enemigos!.",
+  "item.tconstruct.cleaver.description": "La Mandoble es una arma para un maestro de la Forja. ¡Ataques lentos pero voráces para hacerle frente incluso a los más temibles enemigos!.",
 
   "item.tconstruct.crossbow.description": "La Ballesta es un arma de rango ligera, capaz de disparar rápidamente flechas y cohetes and fireworks.",
   "item.tconstruct.longbow.description": "El Arco Largo es una arma de rango bruta, capaz de disparar flechas con precisión por largas distancias.",
@@ -1258,7 +1259,7 @@
   "gui.tconstruct.plate_armor": "Armadura Blindada",
   "gui.tconstruct.plate_armor.description": "La Armadura Blindada tiene harta capacidad para defensa, pero con slots de habilidad limitados.",
   "gui.tconstruct.thrown_ammo": "Arma Arrojadiza",
-  "gui.tconstruct.thrown_ammo.description": "Los Shuriken y Hachas Arrojadizas son simples proyectiles de un solo uso que pueden arrojarse sin necesidad de otra herramienta para hacerlo. Los shurikens tienen más alcance mientras las Hachas Arrojadizas hacen más daño.",
+  "gui.tconstruct.thrown_ammo.description": "Los Shúriken y Hachas Arrojadizas son simples proyectiles de un solo uso que pueden arrojarse sin necesidad de otra herramienta para hacerlo. Los shurikens tienen más alcance mientras las Hachas Arrojadizas hacen más daño.",
 
   "_comment": "Forja, compartido",
 
@@ -1330,8 +1331,8 @@
 
   "gui.tconstruct.duct": "Ducto",
 
-  "multiblock.tconstruct.generic.no_attempt": "La detección de estructuras no ha iniciado, esto es normalmente un bug con el mod",
-  "multiblock.tconstruct.generic.not_loaded": "La estructura está fuera del area cargada esto es normalmente un bug con el mod",
+  "multiblock.tconstruct.generic.no_attempt": "La detección de estructuras no ha iniciado, esto es normalmente un bug del mod",
+  "multiblock.tconstruct.generic.not_loaded": "La estructura está fuera del area cargada esto es normalmente un bug del mod",
   "multiblock.tconstruct.generic.too_high": "La estructura requiere tener bloques en la cima del mundo",
   "multiblock.tconstruct.generic.too_large": "El interior de la estructura es demasiado grande: Tiene %s×%s, de un máximo de %s×%s, ",
 
@@ -1815,9 +1816,9 @@
 
   "material.tconstruct.bone": "Hueso",
   "material.tconstruct.bone.flavor": "¿Quieres pasar un mal rato?",
-  "material.tconstruct.bone.encyclopedia": "Aumenta el daño cuerpo a cuerpo en 0.5 y aplica 2 niveles de perforación de armadura cada nivel por 5 segundos",
-  "material.tconstruct.bone.ranged": "Las flechas aplican 2 niveles de perforación de armadura cada nivel",
-  "material.tconstruct.bone.armor": "Tiene un 15% de probabilidad de que cuando te golpeen, el atacante reciba 2 niveles de perforación de armadura cada nivel por 5 segundos (o por 10 segundos mientras se bloquea).",
+  "material.tconstruct.bone.encyclopedia": "Aumenta el daño cuerpo a cuerpo en 0.5 y aplica 1 nivel de perforación de armadura cada nivel por 4 segundos",
+  "material.tconstruct.bone.ranged": "Las flechas aplican 1 nivel de perforación de armadura cada nivel por 4 segundos",
+  "material.tconstruct.bone.armor": "Tiene un 15% de probabilidad de que cuando te golpeen, el atacante reciba 1 nivel de perforación de armadura cada nivel por 4 segundos (o por 8 segundos mientras se bloquea).",
   "material.tconstruct.bone.ammo": "Causa que las flechas atraviesen el primer objetivo que ataquen, y que los proyectiles arrojados desactiven escudos.",
   "material.tconstruct.bone.skull_flavor": "¿Tienes leche?",
   "material.tconstruct.bone.skull_encyclopedia": "Otorga resistencia por 1 minuto tras beber leche",
@@ -1958,9 +1959,9 @@
   "material.tconstruct.wool.flavor": "¡Colorida!",
   "material.tconstruct.wool.ammo": "Multiplica el daño del proyectil por 0. Ten encuenta que el daño sigue pudiendose aumentar con el poder del arco, y que agravará mobs neutrales.",
 
-  "material.tconstruct.feather": "Pluma",
-  "material.tconstruct.feather.flavor": "El Plumaje de flechas ideal",
-  "material.tconstruct.feather.ammo": "No tiene ningún efecto especial, pero no tiene ningún efecto negativo como otros Plumajes.",
+  "material.tconstruct.feather": "Plumas",
+  "material.tconstruct.feather.flavor": "El Emplumado ideal, como indica su nombre",
+  "material.tconstruct.feather.ammo": "No tiene ningún efecto especial, pero tampoco ningún efecto negativo como los otros emplumados.",
 
   "material.tconstruct.paper": "Papel",
   "material.tconstruct.paper.flavor": "Frágil, pero efectivo",
@@ -1968,7 +1969,7 @@
 
   "material.tconstruct.leaves": "Hojas",
   "material.tconstruct.leaves.flavor": "Al natural",
-  "material.tconstruct.leaves.ammo": "Te otorga la mitad de flechas al craftear o al cambiar de plumaje, aunque las podrás recuperar si cambias otra vez a otro plumaje.",
+  "material.tconstruct.leaves.ammo": "Te otorga la mitad de flechas al craftear o al cambiar de emplumado, aunque las podrás recuperar si cambias otra vez a otro emplumado.",
 
   "material.tconstruct.amethyst": "Amatista",
   "material.tconstruct.amethyst.flavor": "Te protege de la mala puntería, si es que quisieras apuntar justo hasta al frente",
@@ -2035,9 +2036,9 @@
 
   "material.tconstruct.amethyst_bronze": "Bronce Amatista",
   "material.tconstruct.amethyst_bronze.flavor": "No ser confundido con el bronce.",
-  "material.tconstruct.amethyst_bronze.encyclopedia": "Otorga +1 de velocidad minera en bloques que no requieren herramienta, notablemente aquellos en los que la herramienta no es tan efectiva",
-  "material.tconstruct.amethyst_bronze.ranged": "Otorga +0.1 de velocidad con el coste de limitad los ángulos de flecha a 32, 16, o 8 direcciones en los primeros 3 niveles respectivamente",
-  "material.tconstruct.amethyst_bronze.armor": "Otorga +2.5% de velocidad de ataque con el coste de limitad los ángulos del empuje tomado a 32, 16, 8 o 4 direcciones respectivamente",
+  "material.tconstruct.amethyst_bronze.encyclopedia": "Otorga +1 de velocidad minera en bloques que no requieren ninguna herramienta, notablemente aquellos en los que la herramienta no es tan efectiva",
+  "material.tconstruct.amethyst_bronze.ranged": "Otorga +0.1 de velocidad con el coste de limitar los ángulos de flecha a 32, 16, o 8 direcciones en los primeros 3 niveles respectivamente",
+  "material.tconstruct.amethyst_bronze.armor": "Otorga +5% de velocidad de ataque con el coste de +5% de duración de efectos negativos y de limitar los ángulos del empuje tomado a 32, 16, 8 o 4 direcciones respectivamente",
 
   "material.tconstruct.pig_iron": "Hierro Chancho",
   "material.tconstruct.pig_iron.flavor": "El mejor material de todos, no leo lloros.",
@@ -2050,7 +2051,7 @@
   "material.tconstruct.darkthread.flavor": "Ven al lado oscuro, estamos cosiendo",
   "material.tconstruct.darkthread.encyclopedia": "Aumenta las probabilidades de drops de los mobs, puediendo acumularse con suerte",
   "material.tconstruct.darkthread.ranged": "Aumenta las probabilidades de drops de los mobs asesinados por las flechas",
-  "material.tconstruct.darkthread.skull_flavor": "Perfecto para batallas de inteligencia, para cuando decides beber de los vasos para probar cuál está envenenado.",
+  "material.tconstruct.darkthread.skull_flavor": "Perfecto para batallas de intelecto, como cuando decides beber de ambos vasos para saber cuál está envenenado.",
   "material.tconstruct.darkthread.skull_encyclopedia": "Vuelve al portador inmune al veneno, aunque no eliminará veneno ecistente",
 
 
@@ -2089,7 +2090,7 @@
 
   "material.tconstruct.ichorskin": "Piel de Ícor",
   "material.tconstruct.ichorskin.flavor": "El Ícor definitivamente no tiene piel",
-  "material.tconstruct.ichorskin.encyclopedia": "Consume hasta 5 de Sobreslime para reducir el daño en 1% por cada punto de Sobreslime consumido (hasta 5%).",
+  "material.tconstruct.ichorskin.encyclopedia": "Otorga +5% velocidad de movimiento, +2.5% velocidad de ataque, y +7.5% de velocidad minera.",
 
   "material.tconstruct.cinderslime": "Slime Ceniza",
   "material.tconstruct.cinderslime.flavor": "¡Lánzalo al fuego!",
@@ -2144,8 +2145,8 @@
 
   "material.tconstruct.knightmetal": "Caballero del metal",
   "material.tconstruct.knightmetal.flavor": "El metal del slime viajero, también encontrado por criaturas armadas de Twilight.",
-  "material.tconstruct.knightmetal.encyclopedia": "Otorga +0.5 de daño cada nivel por pieza de armadura llebvada por el objetivo",
-  "material.tconstruct.knightmetal.ranged": "Otorga +0.25 de daño cada nivel por pieza de armadura llevada por el objetivo (aplica antes de la velocidad)",
+  "material.tconstruct.knightmetal.encyclopedia": "Otorga +0.4 de daño cada nivel por pieza de armadura llebvada por el objetivo",
+  "material.tconstruct.knightmetal.ranged": "Otorga +0.2 de daño cada nivel por pieza de armadura llevada por el objetivo (aplica antes de la velocidad)",
   "material.tconstruct.knightmetal.armor": "Aumenta la protección por 4% cada nivel por ítem en las manos del atacante",
   "material.tconstruct.knightmetal.format": "%s del Caballero de metal",
 
@@ -2158,6 +2159,10 @@
   "material.tconstruct.end_rod.ammo": "El proyectil ignora la gravedad por el primer segundo de su vida",
 
   "material.tconstruct.knightslime": "Slime Caballero",
+  "material.tconstruct.knightslime.flavor": "¿Pegajoso, y metálico, y piedroso? ¡Facinante!",
+  "material.tconstruct.knightslime.armor": "Consume hasta 5 de sobreslime cada nivel para reducir el daño por 1% por sobreslime consumido (hasta 5% cada nivel).",
+  "material.tconstruct.knightslime.encyclopedia": "Consume 1 de sobreslime cada nivel (o 5 cada nivel en herramientas brutas) para otorgar +8 de velocidad minera cada nivel.",
+  "material.tconstruct.knightslime.ranged": "Consume 1 de sobreslime cada nivel para otorgar +0.1 de velocidad cada nivel.",
 
   "material.tconstruct.enderslime_vine": "Enredadera Slime Ender",
   "material.tconstruct.enderslime_vine.slimeskin": "Piel de Slime Ender",
@@ -2580,7 +2585,7 @@
   "modifier.tconstruct.turtle_shell.description": "Aumenta la protección bajo el agua, junto con la velocidad al nadar",
   "modifier.tconstruct.turtle_shell.resistance": "Resistencia bajo el agua",
   "modifier.tconstruct.dragonborn": "Nacido de la Dragona",
-  "modifier.tconstruct.dragonborn.flavor": "Se un Strixiki",
+  "modifier.tconstruct.dragonborn.flavor": "Se el Strixiki",
   "modifier.tconstruct.dragonborn.description": "Aumenta el ataque y la protección mientras estás en el aire",
   "modifier.tconstruct.dragonborn.resistance": "Resistencia en el aire",
   "modifier.tconstruct.shulking": "Shulker",
@@ -2597,7 +2602,7 @@
 
   "_comment": "Armadura - Contraataque",
   "modifier.tconstruct.thorns": "Espinas",
-  "modifier.tconstruct.thorns.flavor": "¡Punk!",
+  "modifier.tconstruct.thorns.flavor": "¡Punk rock!",
   "modifier.tconstruct.thorns.description": "Aprovecha el poder del guardián, causando que los atacantes se dañen aveces al golpearte",
   "modifier.tconstruct.thorns.attack_damage": "Daño perforante",
   "modifier.tconstruct.sticky": "Pegajoso",
@@ -2623,7 +2628,7 @@
   "modifier.tconstruct.item_frame": "Marco de ítems",
   "modifier.tconstruct.item_frame.flavor": "Lo veo todo",
   "modifier.tconstruct.item_frame.description": "Añade slots de inventario al casco para añadir ítems a tu pantalla. Perfecto para relojes y compases",
-  "modifier.tconstruct.minimap": "Minimaps",
+  "modifier.tconstruct.minimap": "Minimapa",
   "modifier.tconstruct.minimap.flavor": "El sueño del explorador",
   "modifier.tconstruct.minimap.description": "Añade un slot de inventario al casco para llenar con un mapa",
   "modifier.tconstruct.minimap.disabled": "Minimapa: Desactivado",
@@ -2707,7 +2712,7 @@
   "modifier.tconstruct.double_jump.description": "Te permite saltar otra vez en el aire. ¡Los niveles más altos traen más saltos!",
   "modifier.tconstruct.bouncy": "Saltarín",
   "modifier.tconstruct.bouncy.flavor": "¡Celestial!",
-  "modifier.tconstruct.bouncy.description": "Causa queel piso se refleje en ti, como si estuvieras constantemente saltando en slime",
+  "modifier.tconstruct.bouncy.description": "Causa queel piso se refleje en ti, como si estubieras constantemente saltando en slime",
 
   "modifier.tconstruct.frost_walker": "Paso helado",
   "modifier.tconstruct.frost_walker.flavor": "¿Dónde está mi super traje?",
@@ -2749,8 +2754,8 @@
   "modifier.tconstruct.fortune": "Fortuna",
   "modifier.tconstruct.fortune.flavor": "¡Suerte del mineral!",
   "modifier.tconstruct.fortune.description": "¡Te otorga mejores cosas al minar!",
-  "modifier.tconstruct.looting": "Looting",
-  "modifier.tconstruct.looting.flavor": "Luck of the Mobs!",
+  "modifier.tconstruct.looting": "Saqueo",
+  "modifier.tconstruct.looting.flavor": "¡Suerte de los mobs!",
   "modifier.tconstruct.looting.description": "¡Te otorga mejores cosas al matar mobs!",
 
   "_comment": "Expansores",
@@ -2828,7 +2833,7 @@
   "modifier.tconstruct.drill_attack.description": "Golpea al chocar con un objetivo en la trayectoria de tu movimiento.",
   "modifier.tconstruct.drill_attack.requirements": "Requiere Arrojar, Brincar, o Gancho.",
 
-  "modifier.tconstruct.throwing": "Arrojar",
+  "modifier.tconstruct.throwing": "Arrojamiento",
   "modifier.tconstruct.throwing.flavor": "¡Mejor que las flechas!",
   "modifier.tconstruct.throwing.description": "Permite arrojar la herramienta para ocasionar daño cuerpo a cuerpo a distancia.",
   "modifier.tconstruct.returning": "Regreso",
@@ -3105,10 +3110,9 @@
   "modifier.tconstruct.overcast": "Sobremolde",
   "modifier.tconstruct.overcast.flavor": "¡Gruesa cobertura!",
   "modifier.tconstruct.overcast.description": "El Sobreslime puede ser extra grueso en esta herramienta",
-  "modifier.tconstruct.overshield": "Sobrescudo",
-  "modifier.tconstruct.overshield.flavor": "¡Escudo slime!",
-  "modifier.tconstruct.overshield.description": "Consume Sobreslime para reducir todas las fuentes de daño",
-  "modifier.tconstruct.overshield.resistance": "Sobrescudo",
+  "modifier.tconstruct.godspeed": "Caída celestial",
+  "modifier.tconstruct.godspeed.flavor": "¡Acelerar!",
+  "modifier.tconstruct.godspeed.description": "Aumenta la velocidad de movimiento, de ataque, y minera",
   "modifier.tconstruct.lacerating": "Lacerante",
   "modifier.tconstruct.lacerating.flavor": "¡Filoso!",
   "modifier.tconstruct.lacerating.description": "Causa que el objetivo se desangre, tomando daño adicional",
@@ -3121,7 +3125,7 @@
   "modifier.tconstruct.crystalbound.description": "Gana daño potencial extra, pero restringe el ángulo de la flecha",
   "modifier.tconstruct.crystalstrike": "Golpe cristal",
   "modifier.tconstruct.crystalstrike.flavor": "La velocidad del cristal tiene un costo",
-  "modifier.tconstruct.crystalstrike.description": "Aumenta la velocidad de ataque pero restringe los ángulos de empuje",
+  "modifier.tconstruct.crystalstrike.description": "Aumenta la velocidad de ataque pero aumenta la duración de efectos negativos",
   "modifier.tconstruct.lightweight": "Ligero",
   "modifier.tconstruct.lightweight.flavor": "¡Como una hoja esquirlada!",
   "modifier.tconstruct.lightweight.description": "La herramienta es increíblemente ligera para su tamanño, permitiéndote atacar, minar, y arrojar proyectiles más rápido",
@@ -3142,6 +3146,15 @@
   "modifier.tconstruct.overlord": "Sobrecomandar",
   "modifier.tconstruct.overlord.flavor": "¡Real!",
   "modifier.tconstruct.overlord.description": "La herramienta tomda durabilidad como nuevos sujetos Sobreslime",
+  "modifier.tconstruct.overshield": "Sobrescudo",
+  "modifier.tconstruct.overshield.flavor": "¡Escudo slime!",
+  "modifier.tconstruct.overshield.description": "Consume Sobreslime para reducir todas las fuentes de daño",
+  "modifier.tconstruct.overshield.resistance": "Sobrescudo",
+  "modifier.tconstruct.overwield": "Sobreblandir",
+  "modifier.tconstruct.overwield.flavor": "¡Bronce slime!",
+  "modifier.tconstruct.overwield.description": "Consume sobreslime para mejorar la velocidad minera y la velocidad de proyectil",
+  "modifier.tconstruct.overwield.mining_speed": "Velocidad minera de Sobreblandir",
+  "modifier.tconstruct.overwield.velocity": "Velocidad de Sobreblandir",
   "modifier.tconstruct.momentum": "Momentum",
   "modifier.tconstruct.momentum.flavor": "No es lo suficientemente rápido, ¡Tengo que ir más rápido!",
   "modifier.tconstruct.momentum.description": "Minar bloques y disparar flechas aumenta tu velocidad, mientras sigas llendo",
@@ -3300,11 +3313,11 @@
   "modifier.tconstruct.withered.flavor": "El secreto de la decadencia",
   "modifier.tconstruct.withered.description": "Causa wither a los objetivos, haciéndolo más rápido al beber leche",
   "modifier.tconstruct.boon_of_sssss": "Bono siseante",
-  "modifier.tconstruct.boon_of_sssss.flavor": "Las pociones son buenas con esta",
+  "modifier.tconstruct.boon_of_sssss.flavor": "Las pociones son buenas con este rasgo",
   "modifier.tconstruct.boon_of_sssss.description": "Aumenta la duración de efectos positivos",
   "modifier.tconstruct.mithridatism": "Mitridatismo",
   "modifier.tconstruct.mithridatism.flavor": "Inmunidad gradual",
-  "modifier.tconstruct.mithridatism.description": "Inmune a ser envenenado, si tan solo funcionara en veneno actual...",
+  "modifier.tconstruct.mithridatism.description": "Te vuelve inmune a ser envenenado/a, si tan solo funcionara en veneno actual...",
   "modifier.tconstruct.wildfire": "Incendio forestal",
   "modifier.tconstruct.wildfire.flavor": "¡El fuego se esparce!",
   "modifier.tconstruct.wildfire.description": "Aumenta el tiempo en llamas de los objetivos si tu mismo/a estás ardiendo",
@@ -3359,7 +3372,7 @@
   "modifier.tconstruct.drowned_disguise.flavor": "glUgluGluu",
   "modifier.tconstruct.drowned_disguise.description": "Te hace ver como un ahogado a otros ahogados, reduciendo el rango de detección",
   "modifier.tconstruct.blaze_disguise": "Disfráz de Blaze",
-  "modifier.tconstruct.blaze_disguise.flavor": "Sería más convincente si estuvieras en llamas",
+  "modifier.tconstruct.blaze_disguise.flavor": "Sería más convincente si estubieras en llamas",
   "modifier.tconstruct.blaze_disguise.description": "Te hace ver como un blaze a otros blazes, reduciendo el rango de detección",
   "modifier.tconstruct.piglin_disguise": "Disfráz de Piglin",
   "modifier.tconstruct.piglin_disguise.flavor": "Necesitas un poco de oro para completar tu disfráz",
@@ -3368,7 +3381,7 @@
   "modifier.tconstruct.piglin_brute_disguise.flavor": "¿Esta cicatríz te parece convincente?",
   "modifier.tconstruct.piglin_brute_disguise.description": "Te hace ver como un piglin bruto a otros piglin brutos, reduciendo el rango de detección",
   "modifier.tconstruct.zombified_piglin_disguise": "Disfráz de piglin zombificado",
-  "modifier.tconstruct.zombified_piglin_disguise.flavor": "¡Es un hombre? ¿Un cerdo? ¿O un zombi?",
+  "modifier.tconstruct.zombified_piglin_disguise.flavor": "¿Es un hombre? ¿Un cerdo? ¿O un zombi?",
   "modifier.tconstruct.zombified_piglin_disguise.description": "Te hace ver como un piglin zombificado a otros piglins zombificados, reduciendo el rango de detección",
 
   "_comment": "Compat Modifiers",
@@ -3488,8 +3501,8 @@
   "stat.tconstruct.cuirass": "Coraza",
   "tool_stat.tconstruct.armor": "Armadura: ",
   "tool_stat.tconstruct.armor.description": "Cuanto te proteje al equipar.",
-  "tool_stat.tconstruct.armor_toughness": "Dureza de armadura: ",
-  "tool_stat.tconstruct.armor_toughness.description": "Cuanto resiste esta armadura a daño alto.",
+  "tool_stat.tconstruct.armor_toughness": "Dureza: ",
+  "tool_stat.tconstruct.armor_toughness.description": "Cuanto resiste esta armadura a golpes fuertes.",
   "tool_stat.tconstruct.knockback_resistance": "Resis. al empuje: ",
   "tool_stat.tconstruct.knockback_resistance.description": "Cuanto reduce esta armadura el empuje.",
 
@@ -3514,13 +3527,13 @@
   "stat.tconstruct.bowstring": "Cuerda de arco",
   "stat.tconstruct.arrow_head": "Cabeza de flecha",
   "stat.tconstruct.arrow_shaft": "Cuerpo de flecha",
-  "stat.tconstruct.fletching": "Plumaje de flecha",
+  "stat.tconstruct.fletching": "Emplumado",
   "tool_stat.tconstruct.extra.no_stats": "Sin estadísticas",
 
-  "tool_stat.tconstruct.block_amount": "Cantidad de bloquet: ",
+  "tool_stat.tconstruct.block_amount": "Cantidad de bloqueo: ",
   "tool_stat.tconstruct.block_amount.description": "Daño máximo bloqueado por este escudo por ataque.",
   "tool_stat.tconstruct.block_angle": "Ángulo de bloqueo: ",
-  "tool_stat.tconstruct.block_angle.description": "El ángulo total de protección en frente al usar el escudo, con un máximo de 360 grados. Cualquier ataque de un ángilo mayor no será bloqueado.",
+  "tool_stat.tconstruct.block_angle.description": "El ángulo total de protección en frente tuyo al usar el escudo, con un máximo de 360 grados. Cualquier ataque de un ángulo mayor no será bloqueado.",
 
   "tool_stat.tconstruct.sea_luck": "Suerte de los mares: ",
   "tool_stat.tconstruct.sea_luck.description": "Aumenta las probabilidades de conseguir mejor botín al pescar.",
@@ -3740,13 +3753,13 @@
   "subtitles.tconstruct.slime_sling.teleport": "Resortera slime teletransporta",
   "subtitles.tconstruct.enderporting": "Entidad se Enderporta",
   "subtitles.tconstruct.throw.throwball": "Bola arrojadiza vuela",
-  "subtitles.tconstruct.throw.shuriken": "Shuriken vuela",
+  "subtitles.tconstruct.throw.shuriken": "Shúriken es arrojado",
   "subtitles.tconstruct.longbow.charge": "Arco largo se carga",
-  "subtitles.tconstruct.crystalshot": "Flecha golpea",
+  "subtitles.tconstruct.crystalshot": "Impacto de flecha",
   "subtitles.tconstruct.bonk": "Herramienta golpea",
-  "subtitles.tconstruct.spit": "Fluido se escupe",
+  "subtitles.tconstruct.spit": "Fluido es escupido",
 
-  "subtitles.tconstruct.necrotic_heal": "Vida drenada",
+  "subtitles.tconstruct.necrotic_heal": "Vida es drenada",
   "subtitles.tconstruct.extra_jump": "Entidad salta en el aire",
 
   "subtitles.tconstruct.slime_teleport": "Slime se teletransporta",
@@ -3754,7 +3767,7 @@
 
   "subtitles.tconstruct.equip.slime": "Traje slime se agita",
   "subtitles.tconstruct.equip.travelers": "Armadura del viajero cruje",
-  "subtitles.tconstruct.equip.plate": "Armadura blindada suena",
+  "subtitles.tconstruct.equip.plate": "Armadura blindada rechina",
 
   "subtitles.tconstruct.block.earth_crystal.chime": "Cristal Terrestre suena",
   "subtitles.tconstruct.block.sky_crystal.chime":   "Cristal Celestial suena",
