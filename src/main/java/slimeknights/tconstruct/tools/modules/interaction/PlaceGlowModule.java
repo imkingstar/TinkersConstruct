@@ -9,6 +9,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import slimeknights.mantle.data.loadable.primitive.IntLoadable;
 import slimeknights.mantle.data.loadable.record.RecordLoadable;
+import slimeknights.tconstruct.common.TinkerTags;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
 import slimeknights.tconstruct.library.modifiers.hook.interaction.BlockInteractionModifierHook;
@@ -32,11 +33,6 @@ public record PlaceGlowModule(int damage) implements ModifierModule, BlockIntera
   public static final RecordLoadable<PlaceGlowModule> LOADER = RecordLoadable.create(
     IntLoadable.FROM_ZERO.requiredField("tool_damage", PlaceGlowModule::damage),
     PlaceGlowModule::new);
-
-  @Override
-  public Integer getPriority() {
-    return 70;
-  }
 
   @Override
   public RecordLoadable<PlaceGlowModule> getLoader() {
@@ -72,7 +68,9 @@ public record PlaceGlowModule(int damage) implements ModifierModule, BlockIntera
   @Nullable
   @Override
   public Boolean removeBlock(IToolStackView tool, ModifierEntry modifier, ToolHarvestContext context) {
-    if (context.getState().is(TinkerCommons.glow.get()) && tool.getHook(ToolHooks.INTERACTION).canInteract(tool, modifier.getId(), InteractionSource.LEFT_CLICK)) {
+    // if we have left click modifiers active, ensure we don't break the block on left click
+    // otherwise our newly placed block is immediately removed
+    if (context.getState().is(TinkerCommons.glow.get()) && tool.hasTag(TinkerTags.Items.INTERACTABLE_LEFT) && tool.getHook(ToolHooks.INTERACTION).canInteract(tool, modifier.getId(), InteractionSource.LEFT_CLICK)) {
       return false;
     }
     return null;

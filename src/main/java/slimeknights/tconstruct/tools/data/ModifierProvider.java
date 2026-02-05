@@ -86,6 +86,7 @@ import slimeknights.tconstruct.library.modifiers.hook.interaction.EntityInteract
 import slimeknights.tconstruct.library.modifiers.hook.interaction.InteractionSource;
 import slimeknights.tconstruct.library.modifiers.hook.ranged.BowAmmoModifierHook;
 import slimeknights.tconstruct.library.modifiers.impl.BasicModifier.TooltipDisplay;
+import slimeknights.tconstruct.library.modifiers.modules.armor.AdjustDamageModule;
 import slimeknights.tconstruct.library.modifiers.modules.armor.BlockDamageSourceModule;
 import slimeknights.tconstruct.library.modifiers.modules.armor.CoverGroundWalkerModule;
 import slimeknights.tconstruct.library.modifiers.modules.armor.EffectImmunityModule;
@@ -122,6 +123,7 @@ import slimeknights.tconstruct.library.modifiers.modules.capacity.DamageToCapaci
 import slimeknights.tconstruct.library.modifiers.modules.capacity.DurabilityShieldModule;
 import slimeknights.tconstruct.library.modifiers.modules.capacity.LaunchCapacityModule;
 import slimeknights.tconstruct.library.modifiers.modules.capacity.LootToCapacityModule;
+import slimeknights.tconstruct.library.modifiers.modules.capacity.MeleeCapacityModule;
 import slimeknights.tconstruct.library.modifiers.modules.capacity.MiningCapacityModule;
 import slimeknights.tconstruct.library.modifiers.modules.capacity.OverslimeModule;
 import slimeknights.tconstruct.library.modifiers.modules.combat.ConditionalMeleeDamageModule;
@@ -535,11 +537,11 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       new MobTypePredicate(MobType.ILLAGER),
       LivingEntityPredicate.LOADER.tag(TinkerTags.EntityTypes.KILLAGERS))).eachLevel(2.0f));
     buildModifier(ModifierIds.pierce)
-      // less damage than sharpness, but pierces 2 armor
+      // less damage than sharpness, but pierces 1 armor
       .addModule(StatBoostModule.add(ToolStats.ATTACK_DAMAGE).eachLevel(0.5f))
       .addModule(MobEffectModule.builder(TinkerEffects.pierce).applyBeforeMelee(true)
-        // apply effect for 5 seconds, canceling 2 armor per level
-        .level(RandomLevelingValue.perLevel(0, 2)).time(RandomLevelingValue.flat(5 * 20))
+        // apply effect for 4 seconds, canceling 1 armor per level
+        .level(RandomLevelingValue.perLevel(0, 1)).time(RandomLevelingValue.flat(4 * 20))
         // 100% chance on armor
         .chance(LevelingValue.flat(1)).build());
     buildModifier(ModifierIds.chargeAttack).levelDisplay(ModifierLevelDisplay.NO_LEVELS).addModule(ConditionalMeleeDamageModule.builder().attacker(LivingEntityPredicate.SPRINTING).flat(7));
@@ -770,7 +772,7 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       .addModule(ToolActionWalkerTransformModule.builder(ToolActions.HOE_TILL, SoundEvents.HOE_TILL).amount(0.5f, 1))
       .addModule(ShowOffhandModule.DISALLOW_BROKEN).addModule(ShowInteractionSourceModule.INSTANCE);
     buildModifier(ModifierIds.brushing).levelDisplay(ModifierLevelDisplay.NO_LEVELS).addModule(BrushModule.INSTANCE);
-    buildModifier(ModifierIds.harvest).priority(70).levelDisplay(ModifierLevelDisplay.NO_LEVELS)
+    buildModifier(ModifierIds.harvest).levelDisplay(ModifierLevelDisplay.NO_LEVELS)
       .addModule(HarvestModule.INSTANCE)
       .addModule(ShowOffhandModule.DISALLOW_BROKEN).addModule(ShowInteractionSourceModule.INSTANCE);
     buildModifier(ModifierIds.throwing).levelDisplay(ModifierLevelDisplay.NO_LEVELS).addModule(ThrowingModule.INSTANCE);
@@ -970,6 +972,11 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       .levelDisplay(ModifierLevelDisplay.NO_LEVELS)
       .addModule(AttributeModule.builder(ForgeMod.ENTITY_GRAVITY.get(), Operation.MULTIPLY_TOTAL).tooltipStyle(TooltipStyle.PERCENT).flat(-0.2f))
       .addModule(AttributeModule.builder(TinkerAttributes.SAFE_FALL_DISTANCE.get(), Operation.ADDITION).flat(1));
+    buildModifier(ModifierIds.godspeed)
+      .levelDisplay(ModifierLevelDisplay.NO_LEVELS)
+      .addModule(AttributeModule.builder(Attributes.MOVEMENT_SPEED, Operation.MULTIPLY_TOTAL).tooltipStyle(TooltipStyle.PERCENT).flat(0.05f))
+      .addModule(AttributeModule.builder(Attributes.ATTACK_SPEED, Operation.MULTIPLY_TOTAL).tooltipStyle(TooltipStyle.PERCENT).flat(0.025f))
+      .addModule(AttributeModule.builder(TinkerAttributes.MINING_SPEED_MULTIPLIER, Operation.MULTIPLY_TOTAL).tooltipStyle(TooltipStyle.PERCENT).flat(0.075f));
 
     buildModifier(ModifierIds.flamestance)
       .levelDisplay(ModifierLevelDisplay.NO_LEVELS)
@@ -1120,7 +1127,8 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       .addModule(StatBoostModule.add(ToolStats.VELOCITY).toolTag(TinkerTags.Items.RANGED).eachLevel(0.1f))
       .addModule(StatBoostModule.add(ToolStats.PROJECTILE_DAMAGE).toolTag(TinkerTags.Items.AMMO).eachLevel(0.75f));
     buildModifier(ModifierIds.crystalstrike)
-      .addModule(AttributeModule.builder(Attributes.ATTACK_SPEED, Operation.MULTIPLY_TOTAL).eachLevel(0.025f))
+      .addModule(AttributeModule.builder(Attributes.ATTACK_SPEED, Operation.MULTIPLY_TOTAL).tooltipStyle(TooltipStyle.PERCENT).eachLevel(0.05f))
+      .addModule(AttributeModule.builder(TinkerAttributes.BAD_EFFECT_DURATION, Operation.MULTIPLY_TOTAL).tooltipStyle(TooltipStyle.PERCENT).eachLevel(0.05f))
       .addModule(new ArmorLevelModule(TinkerDataKeys.CRYSTALSTRIKE, false, TinkerTags.Items.HELD_ARMOR));
     buildModifier(ModifierIds.spectral).priority(60) // after explosive, before enderference
       .addModule(MobEffectModule.builder(MobEffects.GLOWING).chance(LevelingValue.flat(1)).time(RandomLevelingValue.perLevel(0, 200)).build())
@@ -1139,7 +1147,59 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       .addModule(StatBoostModule.multiplyBase(ToolStats.ATTACK_DAMAGE).eachLevel(0.05f))
       .addModule(StatBoostModule.add(ToolStats.PROJECTILE_DAMAGE).eachLevel(0.25f))
       .addModule(StatBoostModule.add(ToolStats.ARMOR_TOUGHNESS).eachLevel(1));
-    buildModifier(ModifierIds.overshield).levelDisplay(ModifierLevelDisplay.NO_LEVELS).addModule(new OvershieldModule(1.25f, 5));
+    buildModifier(ModifierIds.overshield).addModule(new OvershieldModule(LevelingValue.eachLevel(1.25f), LevelingInt.eachLevel(2)));
+    ModifierId overslime = TinkerModifiers.overslime.getId();
+    buildModifier(ModifierIds.overwield)
+      // small tools consume 1 per mining operation
+      .addModule(ConditionalMiningSpeedModule.builder().percent().toolItem(ItemPredicate.tag(TinkerTags.Items.BROAD_TOOLS).inverted())
+        .formula()
+        .customVariable("overslime", new ModDataVariable(overslime, ModDataSource.PERSISTENT))
+        .variable(LEVEL).min() // must have 1 overslime per level
+        .constant(0.2f).multiply() // effectively grants +6 mining speed when base is 30
+        .variable(VALUE).multiply()
+        .build())
+      .addModule(MiningCapacityModule.builder()
+        .toolItem(ItemPredicate.and(ItemPredicate.tag(TinkerTags.Items.HARVEST), ItemPredicate.tag(TinkerTags.Items.BROAD_TOOLS).inverted()))
+        .before(true).owner(overslime).eachLevel(-1))
+      // broad tools consume 5 per mining operation, same amount consumed with AOE
+      .addModule(ConditionalMiningSpeedModule.builder().percent().toolTag(TinkerTags.Items.BROAD_TOOLS)
+        .formula()
+        .customVariable("overslime", new ModDataVariable(overslime, ModDataSource.PERSISTENT))
+        .constant(5).variable(LEVEL).multiply().min() // must have 5 overslime per level
+        .constant(5).divide() // scale between 0 and 5
+        .constant(0.2f).multiply()
+        .variable(VALUE).multiply()
+        .build())
+      .addModule(MiningCapacityModule.builder().toolTag(TinkerTags.Items.BROAD_TOOLS).before(true).owner(overslime).eachLevel(-5))
+      // melee weapons get +15% attack speed when slimed
+      .addModule(AttributeModule.builder(Attributes.ATTACK_SPEED, Operation.MULTIPLY_TOTAL)
+        .slots(EquipmentSlot.MAINHAND)
+        .formula()
+        .customVariable("overslime", new ModDataVariable(overslime, ModDataSource.PERSISTENT))
+        .variable(LEVEL).min() // must have 1 overslime per level
+        .constant(0.15f).multiply()
+        .build()
+      )
+      .addModule(MeleeCapacityModule.builder().before(true).owner(overslime).eachLevel(-1))
+      // ranged: +6% velocity and drawspeed
+      .addModule(ConditionalStatModule.stat(ToolStats.VELOCITY)
+        .formula()
+        .customVariable("overslime", new ModDataVariable(overslime, ModDataSource.PERSISTENT))
+        .variable(LEVEL).min() // must have 1 overslime per level
+        .constant(0.06f).multiply()
+        .variable(MULTIPLIER).multiply()
+        .variable(VALUE).add()
+        .build())
+      .addModule(ConditionalStatModule.stat(ToolStats.DRAW_SPEED)
+        .formula()
+        .customVariable("overslime", new ModDataVariable(overslime, ModDataSource.PERSISTENT))
+        .variable(LEVEL).min() // must have 1 overslime per level
+        .constant(0.06f).multiply()
+        .variable(MULTIPLIER).multiply()
+        .variable(VALUE).add()
+        .build())
+      .addModule(LaunchCapacityModule.builder().toolTag(TinkerTags.Items.RANGED).owner(overslime).eachLevel(-1));
+
     // traits - tier 3 compat
     buildModifier(ModifierIds.maintained)
       .addModule(ConditionalMiningSpeedModule.builder()
@@ -1304,24 +1364,20 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
       .addModule(AttributeModule.builder(Attributes.ATTACK_SPEED, Operation.MULTIPLY_TOTAL).slots(EquipmentSlot.OFFHAND).toolItem(ItemPredicate.tag(TinkerTags.Items.HELD_ARMOR)).eachLevel(-0.1f))
       .addModule(AttributeModule.builder(Attributes.MOVEMENT_SPEED, Operation.MULTIPLY_TOTAL).slots(ARMOR_SLOTS).eachLevel(-0.1f))
       .addModule(AttributeModule.builder(ForgeMod.ENTITY_GRAVITY, Operation.MULTIPLY_TOTAL).tooltipStyle(TooltipStyle.PERCENT).eachLevel(0.1f));
-    EntityVariable equipmentCount = new EquipmentCountEntityVariable(ARMOR_SLOTS);
     // multiply valiant bonus by 4 for entities with fewer armor slots (slimes basically)
-    EntityVariable smallArmor = new ConditionalEntityVariable(LivingEntityPredicate.tag(TinkerTags.EntityTypes.SMALL_ARMOR), 4, 1);
     buildModifier(ModifierIds.valiant)
       .addModule(ConditionalMeleeDamageModule.builder()
         .formula()
-        .customVariable("equipment", new EntityMeleeVariable(equipmentCount, WhichEntity.TARGET, 4))
-        .customVariable("small_armor", new EntityMeleeVariable(smallArmor, WhichEntity.TARGET, 1)).multiply()
-        .constant(0.5f).multiply()
+        .customVariable("armor_coverage", new EntityMeleeVariable(EntityVariable.ARMOR_COVERAGE, WhichEntity.TARGET, 1))
+        .constant(1.6f).multiply()
         .variable(LEVEL).multiply()
         .variable(MULTIPLIER).multiply()
         .variable(VALUE).add()
         .build())
       .addModule(ConditionalPowerModule.builder()
         .formula()
-        .customVariable("equipment", new EntityPowerVariable(equipmentCount, WhichEntity.TARGET, 4))
-        .customVariable("small_armor", new EntityPowerVariable(smallArmor, WhichEntity.TARGET, 1)).multiply()
-        .constant(0.25f).multiply()
+        .customVariable("armor_coverage", new EntityPowerVariable(EntityVariable.ARMOR_COVERAGE, WhichEntity.TARGET, 1))
+        .constant(0.8f).multiply()
         .variable(LEVEL).multiply()
         .variable(MULTIPLIER).multiply()
         .variable(VALUE).add()
@@ -1334,6 +1390,33 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
         .variable(VALUE).add()
         .build());
     buildModifier(ModifierIds.temperedProtection).addModule(ProtectionModule.builder().attacker(LivingEntityPredicate.ON_FIRE).eachLevel(1.25f));
+    buildModifier(ModifierIds.ambush)
+      .addModule(ConditionalStatModule.stat(ToolStats.PROJECTILE_DAMAGE).holder(TinkerPredicate.FULL_HEALTH).eachLevel(0.5f))
+      .addModule(ConditionalPowerModule.builder().target(TinkerPredicate.FULL_HEALTH).eachLevel(0.25f))
+      .addModule(ConditionalMeleeDamageModule.builder()
+        .formula()
+        // +1 damage if you are at full health
+        .customVariable("attacker_full", new EntityMeleeVariable(new ConditionalEntityVariable(TinkerPredicate.FULL_HEALTH, 1, 0), WhichEntity.ATTACKER, 1))
+        // +0.6 damage if target is at full health
+        .customVariable("target_full", new EntityMeleeVariable(new ConditionalEntityVariable(TinkerPredicate.FULL_HEALTH, 0.6f, 0), WhichEntity.TARGET, 0.6f))
+        .add()
+        .variable(LEVEL).multiply()
+        .variable(MULTIPLIER).multiply()
+        .variable(VALUE).add()
+        .build());
+    buildModifier(ModifierIds.warded)
+      .addModule(AdjustDamageModule.builder()
+        .tooltipValue(100) // valid up to 200 levels!
+        .holder(TinkerPredicate.FULL_HEALTH)
+        .formula()
+        // reduce 1 damage per level
+        .variable(VALUE).variable(LEVEL).subtract()
+        // don't let that drop below 1
+        .constant(1).max()
+        // if that raised the value, use the original
+        .variable(VALUE).min()
+        .build(),
+        ModifierHooks.MODIFY_DAMAGE, ModifierHooks.TOOLTIP);
 
     // traits - slimeskull
     buildModifier(ModifierIds.mithridatism).addModule(new EffectImmunityModule(MobEffects.POISON)).levelDisplay(ModifierLevelDisplay.NO_LEVELS);
