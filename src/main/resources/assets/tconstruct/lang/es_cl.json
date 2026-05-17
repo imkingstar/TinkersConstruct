@@ -8,7 +8,7 @@
   "block.tconstruct.ender_slime": "Bloque de Slime Ender",
   "block.tconstruct.ender_slime.tooltip": "Se pega al ser empujado, Pero no al estar adjacente a otro bloque",
 
-  "block.tconstruct.earth_congealed_slime": "Bloque de SLime Cuajado",
+  "block.tconstruct.earth_congealed_slime": "Bloque de Slime Cuajado",
   "block.tconstruct.earth_congealed_slime.tooltip": "Te permite saltar muy alto",
   "block.tconstruct.sky_congealed_slime": "Bloque de Slime Celestial Cuajado",
   "block.tconstruct.sky_congealed_slime.tooltip": "Te permite saltar muy alto",
@@ -1400,7 +1400,7 @@
 
   "block.tconstruct.seared_fuel_tank": "Tanque de Combustible Abrasado",
   "block.tconstruct.seared_fuel_tank.tooltip": "El corazón de la forja.\nRetiene líquidos al romperse.",
-  "block.tconstruct.seared_fuel_gauge": "Indicador de Combustuble Abrasado",
+  "block.tconstruct.seared_fuel_gauge": "Indicador de Combustible Abrasado",
   "block.tconstruct.seared_fuel_gauge.tooltip": "Corazón de la forja alternativo.\nRetiene líquidos al romperse.",
   "block.tconstruct.seared_ingot_tank": "Tanque de Lingotes Abrasado ",
   "block.tconstruct.seared_ingot_tank.tooltip": "Ideal para metales, reteniendo 48 lingotes de fluido.\nRetiene líquidos al romperse.",
